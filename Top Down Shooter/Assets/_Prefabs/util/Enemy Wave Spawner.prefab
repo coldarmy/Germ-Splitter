@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &91748164011048090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7443113169111130648}
+  - component: {fileID: 6750454010233471467}
+  m_Layer: 0
+  m_Name: Enemy Wave Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7443113169111130648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91748164011048090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6750454010233471467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91748164011048090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629652f14189083498657b0424e3ada6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 5
+  budget: 25
+  waveNum: 1
+  spawnables:
+  - {fileID: 11400000, guid: 55fb465efd565d543931bdadd3238bf9, type: 2}
+  - {fileID: 11400000, guid: 33588e9d763a21f42ad9b438f3199984, type: 2}
+  - {fileID: 11400000, guid: 06f607af732e1864ba1bc8b482957e00, type: 2}
+  - {fileID: 11400000, guid: 9782a8e32f8be7146ad3d9c3423cd64a, type: 2}
+  - {fileID: 11400000, guid: 7dda600197598d748b3aace82214b0be, type: 2}
+  - {fileID: 11400000, guid: a47d36fc527ac4248b6a5f15a9dbbfbf, type: 2}
+  - {fileID: 11400000, guid: 6b7784e072edb6e46a4076426383ac1c, type: 2}
+  - {fileID: 11400000, guid: a4e3de5c2315115408fec81e30bf7c7c, type: 2}
+  - {fileID: 11400000, guid: 476641b89c4097f449441c992f4d9c72, type: 2}
+  - {fileID: 11400000, guid: 6a52092892d63d449a96f70ea81aed07, type: 2}
+  - {fileID: 11400000, guid: f6bbbdd34b611e14fa52b29caf95fb8d, type: 2}
+  - {fileID: 11400000, guid: 8ed674091ede337479229b214af17ec1, type: 2}
+  spawnPredictor: {fileID: 4056284960543211579, guid: 673697689c8aa2947b763864b76d28a9,
+    type: 3}
