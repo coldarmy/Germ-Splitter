@@ -31,7 +31,7 @@ public class HealthBarHandler : MonoBehaviour
                 transform.position = Camera.main.WorldToScreenPoint(target.position + offset);
             }
             
-            whiteHealth.fillAmount = Mathf.Lerp(whiteHealth.fillAmount, redHealth.fillAmount, Time.deltaTime * 4f);
+            whiteHealth.fillAmount = Mathf.Lerp(whiteHealth.fillAmount, redHealth.fillAmount, Time.deltaTime * 8f);
             if(whiteHealth.fillAmount <= 0.01f)
             {
                 ShowHealthBar(false);

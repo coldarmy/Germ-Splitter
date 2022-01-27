@@ -6,7 +6,7 @@ using MoreMountains.Feedbacks;
 public class GunController : MonoBehaviour
 {
 
-    public BulletData myBulletType;
+    public BulletData standardBullet, specialBullet;
     public MMFeedbacks ShootFeedback;
     [SerializeField] private Rigidbody rb;
     private float bulletOffset = .5f;
@@ -18,17 +18,20 @@ public class GunController : MonoBehaviour
     private void OnEnable()
     {
         lr = GetComponent<LineRenderer>();
-        AssignBulletValues(myBulletType.cooldown, myBulletType.playerKB);
+        AssignBulletValues(standardBullet.cooldown, standardBullet.playerKB);
         cooldown = 0;
 
     }
 
+    
+    
     
 
     private void AssignBulletValues(float cd, float kickBack)
     {
         shootCD = cd;
         playerKB = kickBack;
+        
     }
 
     private void Update()
@@ -59,7 +62,7 @@ public class GunController : MonoBehaviour
     public void ShootGun(Vector3 dir)
     {
         //Debug.Log("shoot");
-        BulletSpawner.instance.SpawnBullet(myBulletType, dir, this.transform.position, bulletOffset);
+        BulletSpawner.instance.SpawnBullet(standardBullet, dir, this.transform.position, bulletOffset);
         //  KickBack();
         ShootFeedback?.PlayFeedbacks();
         cooldown = shootCD;

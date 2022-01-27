@@ -63,6 +63,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -87,6 +88,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &2337780731634523880
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -130,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitFeedback: {fileID: 9038255153416252649}
+  invulnerableDebug: 0
   startingHP: 3
   standardMat: {fileID: 2100000, guid: fae53b468305eb64bace63d17b247bcd, type: 2}
   invulMat: {fileID: 2100000, guid: b6a6894b4cb28b54ebe97471895d2ad7, type: 2}
@@ -145,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c664bbb314e8c6e40bc1b93419dcbcc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBulletType: {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
+  standardBullet: {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
+  specialBullet: {fileID: 0}
   ShootFeedback: {fileID: 8721631062084231103}
   rb: {fileID: 0}
 --- !u!96 &1535779122480506448
@@ -164,6 +168,7 @@ TrailRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
