@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 2098798744675473310}
   - component: {fileID: 4037868847417548966}
   - component: {fileID: 3821322958879277840}
+  - component: {fileID: 1084238706833978319}
   m_Layer: 0
   m_Name: death feedbacks
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 4037868847417548966}
   - {fileID: 3821322958879277840}
+  - {fileID: 1084238706833978319}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -221,7 +223,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  FreezeFrameDuration: 0.02
+  FreezeFrameDuration: 0.05
 --- !u!114 &3821322958879277840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +267,48 @@ MonoBehaviour:
   TargetWorldPosition: {x: 0, y: 0, z: 0}
   Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0
+--- !u!114 &1084238706833978319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3581453953786216990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8fe7e41857f44348b52714b3238715c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Camera Shake
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  RepeatUntilStopped: 0
+  Channel: 0
+  CameraShakeProperties:
+    Duration: 0.1
+    Amplitude: 0.1
+    Frequency: 0.15
+    AmplitudeX: 0.5
+    AmplitudeY: 0.5
+    AmplitudeZ: 0.1
 --- !u!1 &6575479302411015344
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +371,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -351,6 +396,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &6575479302411015345
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -395,6 +441,7 @@ MonoBehaviour:
   HitFeedback: {fileID: 3778208489530313124}
   DeathFeedback: {fileID: 2098798744675473310}
   startingHP: 1
+  myHP: {fileID: 0}
 --- !u!114 &6842218274613960054
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
         {
             instance = this;
         }
+        Application.targetFrameRate = 144;
     }
 
     // Update is called once per frame

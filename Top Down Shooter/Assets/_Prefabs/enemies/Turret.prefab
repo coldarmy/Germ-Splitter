@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 4793436291064373210}
   - component: {fileID: 2937572886377643844}
   - component: {fileID: 2384432216839726234}
+  - component: {fileID: 4254522196793497471}
   m_Layer: 0
   m_Name: death feedbacks
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MonoBehaviour:
   Feedbacks:
   - {fileID: 2937572886377643844}
   - {fileID: 2384432216839726234}
+  - {fileID: 4254522196793497471}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -221,7 +223,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  FreezeFrameDuration: 0.03
+  FreezeFrameDuration: 0.05
 --- !u!114 &2384432216839726234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +267,48 @@ MonoBehaviour:
   TargetWorldPosition: {x: 0, y: 0, z: 0}
   Offset: {x: 0, y: 0, z: 0}
   NestParticles: 0
+--- !u!114 &4254522196793497471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3720843116180345131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8fe7e41857f44348b52714b3238715c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Camera Shake
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  RepeatUntilStopped: 0
+  Channel: 0
+  CameraShakeProperties:
+    Duration: 0.1
+    Amplitude: 0.1
+    Frequency: 0.15
+    AmplitudeX: 0.5
+    AmplitudeY: 0.5
+    AmplitudeZ: 0.1
 --- !u!1 &4177489452555983350
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +372,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -352,6 +397,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &4177489452555983351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -380,6 +426,7 @@ MonoBehaviour:
   HitFeedback: {fileID: 2329716058918950809}
   DeathFeedback: {fileID: 4793436291064373210}
   startingHP: 3
+  myHP: {fileID: 0}
 --- !u!114 &6974849182711678281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +539,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -516,3 +564,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
