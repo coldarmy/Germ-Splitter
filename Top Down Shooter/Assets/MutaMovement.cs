@@ -10,8 +10,9 @@ public class MutaMovement : MonoBehaviour
     private float distanceToCam, curMoveSpeed;
     private bool moving;
     private Camera cam;
-    private Vector3 moveDir;
+    [SerializeField]private Vector3 moveDir;
     private GunController myGun;
+    private Rigidbody _rb;
     [SerializeField] private enum ControlType
     {
         Mouse,
@@ -20,6 +21,7 @@ public class MutaMovement : MonoBehaviour
 
     private void OnEnable()
     {
+        _rb = GetComponent<Rigidbody>();
         myGun = GetComponent<GunController>();
         cam = Camera.main;
         distanceToCam = Vector3.Distance(cam.transform.position, transform.position);
@@ -30,7 +32,9 @@ public class MutaMovement : MonoBehaviour
         }
     }
 
-    private void Update()
+    
+
+   /* private void Update()
     {        
         switch(controlState)
         {
@@ -40,8 +44,18 @@ public class MutaMovement : MonoBehaviour
             case ControlType.Mouse:
                 HandleMouseMovement();
                     break;
+        }        
+    }*/
+
+    private void FixedUpdate()
+    {
+        LookAtMouse();
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            moving = !moving;
         }
-        
+        ChangeAcceleration(!moving);
+        MoveForward();
     }
 
 
@@ -85,7 +99,9 @@ public class MutaMovement : MonoBehaviour
     private void MoveForward()
     {
 
-        transform.position += transform.forward * curMoveSpeed * Time.deltaTime;
+        //transform.position += transform.forward * curMoveSpeed * Time.deltaTime;
+        // _rb.MovePosition(transform.position + (transform.forward * curMoveSpeed * Time.fixedDeltaTime));
+        _rb.velocity = moveDir * curMoveSpeed;// * Time.fixedDeltaTime;
     }
 
     private void LookAtMouse()
