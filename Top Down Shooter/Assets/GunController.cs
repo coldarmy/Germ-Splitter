@@ -9,7 +9,7 @@ public class GunController : MonoBehaviour
     public BulletData standardBullet, specialBullet;
     public MMFeedbacks ShootFeedback;
     [SerializeField] private Rigidbody rb;
-    private float bulletOffset = .5f;
+    private float bulletOffset = .65f;
     private float shootCD, playerKB; // get these values from the bullet
     private float cooldown;
     private LineRenderer lr;
@@ -66,6 +66,7 @@ public class GunController : MonoBehaviour
         //  KickBack();
         ShootFeedback?.PlayFeedbacks();
         cooldown = shootCD;
+        //Debug.Break();
     }
 
     public bool CanShoot()

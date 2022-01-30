@@ -50,6 +50,10 @@ public class MutaMovement : MonoBehaviour
     private void FixedUpdate()
     {
         LookAtMouse();
+        if (Input.GetMouseButton(0) && myGun.CanShoot())
+        {
+            myGun.ShootGun(moveDir);
+        }
         if (Input.GetKeyDown(KeyCode.W))
         {
             moving = !moving;
