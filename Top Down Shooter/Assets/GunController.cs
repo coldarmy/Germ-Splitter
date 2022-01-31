@@ -12,8 +12,7 @@ public class GunController : MonoBehaviour
     private float bulletOffset = .65f;
     private float shootCD, playerKB; // get these values from the bullet
     private float cooldown;
-    private LineRenderer lr;
-    
+    private LineRenderer lr;    
     
     private void OnEnable()
     {
@@ -22,10 +21,6 @@ public class GunController : MonoBehaviour
         cooldown = 0;
 
     }
-
-    
-    
-    
 
     private void AssignBulletValues(float cd, float kickBack)
     {
@@ -39,45 +34,28 @@ public class GunController : MonoBehaviour
         if (cooldown > 0)
         {
             cooldown -= Time.deltaTime;
-        }
-        
+        }        
     }
-
-   /* private void LateUpdate()
-    {
-        
-        Vector3 startPos = transform.position + transform.up * 1f;
-        Vector3 endPos = startPos;
-        RaycastHit hit;
-        // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(startPos, transform.up, out hit, 500f))
-        {
-            endPos = hit.point;
-            endPos.y = startPos.y;
-        }
-        lr.SetPosition(0, startPos);
-        lr.SetPosition(1, endPos);
-    }*/
 
     public void ShootGun(Vector3 dir)
     {
-        //Debug.Log("shoot");
         BulletSpawner.instance.SpawnBullet(standardBullet, dir, this.transform.position, bulletOffset);
-        //  KickBack();
         ShootFeedback?.PlayFeedbacks();
         cooldown = shootCD;
-        //Debug.Break();
+    }
+
+    public void ShootSpecial(Vector3 dir)
+    {
+        Debug.Log("shooting special");
+        BulletSpawner.instance.SpawnBullet(specialBullet, dir, this.transform.position, bulletOffset);
+        ShootFeedback?.PlayFeedbacks();
+        cooldown = shootCD;
     }
 
     public bool CanShoot()
     {
         return cooldown <= 0;
     }
-    
-    private void KickBack()
-    {
-        Vector3 dir = -(transform.up.normalized);
-        rb.AddForce(dir * playerKB);
-    }
+
 
 }

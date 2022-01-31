@@ -19,7 +19,7 @@ public class SpawnPredictorController : MonoBehaviour
         Vector3 startSize = displayMesh.localScale;       
         while (t > 0)
         {
-            displayMesh.localScale = Vector3.Lerp( Vector3.zero, startSize, t);
+            displayMesh.localScale = Vector3.Lerp(  startSize, Vector3.zero, t);
             t -= Time.deltaTime * spawnSpeed ;
             yield return null;
         }

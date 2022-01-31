@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlState: 0
   maxMoveSpeed: 15
-  rotSpeed: 10
+  rotSpeed: 100
   accelRate: 15
   decelRate: 100
   moveDir: {x: 0, y: 0, z: 0}

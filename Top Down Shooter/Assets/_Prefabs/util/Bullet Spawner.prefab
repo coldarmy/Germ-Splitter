@@ -46,4 +46,6 @@ MonoBehaviour:
   bullets:
   - {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
   - {fileID: 11400000, guid: bb8ebb8a4e3fa3e4685d3bf0288cda7f, type: 2}
+  - {fileID: 11400000, guid: 2d395df8615c30c45992d52c06e4184c, type: 2}
+  - {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
   offset: 0.5

@@ -21,5 +21,5 @@ MonoBehaviour:
   moveSpeed: 30
   bulletObject: {fileID: 2836085010465616092, guid: 9ff58a0e186e52c46b1894d4073b0153,
     type: 3}
-  damage: 1
+  damage: 10
   poolSize: 20

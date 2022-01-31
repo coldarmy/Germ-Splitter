@@ -183,54 +183,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &234409182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3782630738585818453, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-    type: 3}
-  m_PrefabInstance: {fileID: 2337780730529285653}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &234409187
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 234409182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8fe7e41857f44348b52714b3238715c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Active: 1
-  Label: Camera Shake
-  Chance: 100
-  Timing:
-    TimescaleMode: 0
-    InitialDelay: 0
-    CooldownDuration: 0
-    NumberOfRepeats: 0
-    RepeatForever: 0
-    DelayBetweenRepeats: 1
-    MMFeedbacksDirectionCondition: 0
-    PlayDirection: 0
-    ConstantIntensity: 0
-    UseIntensityInterval: 0
-    IntensityIntervalMin: 0
-    IntensityIntervalMax: 0
-    Sequence: {fileID: 0}
-    TrackID: 0
-    Quantized: 0
-    TargetBPM: 120
-  DebugActive: 0
-  RepeatUntilStopped: 0
-  Channel: 0
-  CameraShakeProperties:
-    Duration: 0.15
-    Amplitude: 1
-    Frequency: 0.05
-    AmplitudeX: 0.5
-    AmplitudeY: 0.5
-    AmplitudeZ: 0.1
 --- !u!1 &468256360
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,18 +735,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &790231105 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8546918535822106161, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-    type: 3}
-  m_PrefabInstance: {fileID: 2337780730529285653}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65811966b3e48ad4a9362cb8b1c4b83b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &890198808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,11 +1357,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 453243280038358004, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Active
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1109891330, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
+      propertyPath: specialBullet
+      value: 
+      objectReference: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb,
+        type: 2}
     - target: {fileID: 656782651466952711, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
       propertyPath: Active
@@ -1436,21 +1376,6 @@ PrefabInstance:
         type: 3}
       propertyPath: CameraShakeProperties.AmplitudeY
       value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1174324725488460697, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Active
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1535779122480506448, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.a
-      value: 0.6862745
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337780731634523881, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: controlState
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337780731634523886, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
@@ -1522,16 +1447,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2572340870607059928, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782630738585818453, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3993774173699035062, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
       propertyPath: m_UseWorldSpace
@@ -1557,36 +1472,6 @@ PrefabInstance:
       propertyPath: ZoomTransitionDuration
       value: 0.01
       objectReference: {fileID: 0}
-    - target: {fileID: 8721631062084231103, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721631062084231103, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Feedbacks.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721631062084231103, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Feedbacks.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8721631062084231103, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Feedbacks.Array.data[1]
-      value: 
-      objectReference: {fileID: 790231105}
-    - target: {fileID: 9038255153416252649, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Feedbacks.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9038255153416252649, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Feedbacks.Array.data[2]
-      value: 
-      objectReference: {fileID: 234409187}
     m_RemovedComponents:
     - {fileID: 339846274561790926, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
@@ -1904,17 +1789,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
-        type: 3}
-      propertyPath: bullets.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
-        type: 3}
-      propertyPath: bullets.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2d395df8615c30c45992d52c06e4184c,
-        type: 2}
     - target: {fileID: 6909007401879865541, guid: 48c17575932848a4eab7f6d14c3da304,
         type: 3}
       propertyPath: m_RootOrder
@@ -1974,11 +1848,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullet Spawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909007401879865563, guid: 48c17575932848a4eab7f6d14c3da304,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48c17575932848a4eab7f6d14c3da304, type: 3}

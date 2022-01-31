@@ -549,7 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitFeedback: {fileID: 8595046907109704683}
   DeathFeedback: {fileID: 5058874946426635334}
-  startingHP: 3
+  startingHP: 30
   myHP: {fileID: 0}
 --- !u!114 &5604944773322466150
 MonoBehaviour:

@@ -13,6 +13,7 @@ public class MutaMovement : MonoBehaviour
     [SerializeField]private Vector3 moveDir;
     private GunController myGun;
     private Rigidbody _rb;
+    private Quaternion oldLookRot;
     [SerializeField] private enum ControlType
     {
         Mouse,
@@ -49,17 +50,7 @@ public class MutaMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        LookAtMouse();
-        if (Input.GetMouseButton(0) && myGun.CanShoot())
-        {
-            myGun.ShootGun(moveDir);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            moving = !moving;
-        }
-        ChangeAcceleration(!moving);
-        MoveForward();
+        HandleMouseMovement();
     }
 
 
@@ -72,10 +63,14 @@ public class MutaMovement : MonoBehaviour
     private void HandleMouseMovement()
     {
         LookAtMouse();
-
         if (Input.GetMouseButton(0) && myGun.CanShoot())
         {
             myGun.ShootGun(moveDir);
+        }
+        if (Input.GetMouseButton(1) && myGun.CanShoot())
+        {
+            Debug.Log("trying to shoot rocket");
+            myGun.ShootSpecial(moveDir);
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -119,8 +114,10 @@ public class MutaMovement : MonoBehaviour
         Quaternion targetRot = Quaternion.LookRotation(mouseTarget - transform.position, transform.up);
         // Quaternion movementRot = Quaternion.Lerp(rb.rotation, targetRot, rotSpeed * Time.fixedDeltaTime);
         //rb.MoveRotation(movementRot);
-       // moveDir = Vector3.Lerp(moveDir, targetRot.eulerAngles, rotSpeed * Time.deltaTime).normalized;
+        // moveDir = Vector3.Lerp(moveDir, targetRot.eulerAngles, rotSpeed * Time.deltaTime).normalized;
+        oldLookRot = transform.rotation;
         transform.LookAt(mouseTarget);
+        transform.rotation = Quaternion.Lerp(oldLookRot, transform.rotation, rotSpeed * Time.fixedDeltaTime);
         moveDir = transform.forward;
     }
 }
