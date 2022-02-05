@@ -12,10 +12,10 @@ public class GunController : MonoBehaviour
     private float bulletOffset = .65f;
     private float shootCD, playerKB; // get these values from the bullet
     private float cooldown;
-    private LineRenderer lr;    
+    private LineRenderer lr;
     
     private void OnEnable()
-    {
+    {;
         lr = GetComponent<LineRenderer>();
         AssignBulletValues(standardBullet.cooldown, standardBullet.playerKB);
         cooldown = 0;

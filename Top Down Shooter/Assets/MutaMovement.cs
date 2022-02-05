@@ -14,6 +14,7 @@ public class MutaMovement : MonoBehaviour
     private GunController myGun;
     private Rigidbody _rb;
     private Quaternion oldLookRot;
+    private Vector3 mousePos, mouseTarget, shootDir;
     [SerializeField] private enum ControlType
     {
         Mouse,
@@ -50,7 +51,17 @@ public class MutaMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        HandleMouseMovement();
+        switch (controlState)
+        {
+            case ControlType.Controller:
+                HandleControllerMovement();
+                break;
+            case ControlType.Mouse:
+                HandleMouseMovement();
+                break;
+        }
+
+        // HandleMouseMovement();
     }
 
 
@@ -65,7 +76,8 @@ public class MutaMovement : MonoBehaviour
         LookAtMouse();
         if (Input.GetMouseButton(0) && myGun.CanShoot())
         {
-            myGun.ShootGun(moveDir);
+            shootDir = (mouseTarget - transform.position).normalized;
+            myGun.ShootGun(shootDir);
         }
         if (Input.GetMouseButton(1) && myGun.CanShoot())
         {
@@ -97,27 +109,29 @@ public class MutaMovement : MonoBehaviour
 
     private void MoveForward()
     {
-
-        //transform.position += transform.forward * curMoveSpeed * Time.deltaTime;
-        // _rb.MovePosition(transform.position + (transform.forward * curMoveSpeed * Time.fixedDeltaTime));
         _rb.velocity = moveDir * curMoveSpeed;// * Time.fixedDeltaTime;
     }
 
     private void LookAtMouse()
     {
-        var mousePos = Input.mousePosition;
+        mousePos = Input.mousePosition;
         distanceToCam = Vector3.Distance(cam.transform.position, transform.position);
         mousePos.z = distanceToCam; // select distance = 10 units from the Bcamera
-        Vector3 mouseTarget = cam.ScreenToWorldPoint(mousePos);
-        mouseTarget.y = transform.position.y;
-        Debug.DrawLine(transform.position, mouseTarget, Color.blue, 1f);
+        //Vector3 mouseTarget = cam.ScreenToWorldPoint(mousePos);
+        //mouseTarget.y = transform.position.y;
+        mouseTarget = GetMouseTarget(mousePos);
+        //Debug.DrawLine(transform.position, mouseTarget, Color.blue, 1f);
         Quaternion targetRot = Quaternion.LookRotation(mouseTarget - transform.position, transform.up);
-        // Quaternion movementRot = Quaternion.Lerp(rb.rotation, targetRot, rotSpeed * Time.fixedDeltaTime);
-        //rb.MoveRotation(movementRot);
-        // moveDir = Vector3.Lerp(moveDir, targetRot.eulerAngles, rotSpeed * Time.deltaTime).normalized;
         oldLookRot = transform.rotation;
         transform.LookAt(mouseTarget);
         transform.rotation = Quaternion.Lerp(oldLookRot, transform.rotation, rotSpeed * Time.fixedDeltaTime);
         moveDir = transform.forward;
+    }
+
+    public Vector3 GetMouseTarget(Vector3 mousePosition)
+    {
+        Vector3 pos = cam.ScreenToWorldPoint(mousePosition);
+        pos.y = transform.position.y;
+        return pos;
     }
 }
