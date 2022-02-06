@@ -32,7 +32,7 @@ public class SpawnWaveController : MonoBehaviour
         EnemyHP.OnEnemyDeath -= HandleEnemyDeath;
     }
 
-    private void HandleEnemyDeath()
+    private void HandleEnemyDeath(Vector3 pos)
     {
         livingEnemies--;
         if(livingEnemies <= 0)

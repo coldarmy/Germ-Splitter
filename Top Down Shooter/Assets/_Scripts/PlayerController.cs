@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private int curHP;
     private bool invul;
     private float invulTime = .5f, invulCount;
+    
 
     private void OnEnable()
     {
@@ -59,6 +60,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void AddHealth()
+    {
+        curHP += 1;
+        if(curHP > startingHP)
+        {
+            curHP = startingHP;
+        }
+    }
+
     private void Die()
     {
         Destroy(this.gameObject);
@@ -89,4 +99,6 @@ public class PlayerController : MonoBehaviour
            // TakeDamage(startingHP);
         }
     }
+
+    
 }

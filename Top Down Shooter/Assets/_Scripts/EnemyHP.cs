@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyHP : MonoBehaviour
 {
     // Start is called before the first frame update
-    public delegate void EnemyEvent();
+    public delegate void EnemyEvent(Vector3 pos);
     public static EnemyEvent OnEnemyDeath;
     public MMFeedbacks HitFeedback, DeathFeedback;
     [SerializeField] private int startingHP;
@@ -39,7 +39,7 @@ public class EnemyHP : MonoBehaviour
     {
         DeathFeedback?.PlayFeedbacks();
         myHP.UnassignHPBar();
-        OnEnemyDeath?.Invoke();
+        OnEnemyDeath?.Invoke(transform.position);
         this.gameObject.SetActive(false);
     }
 
