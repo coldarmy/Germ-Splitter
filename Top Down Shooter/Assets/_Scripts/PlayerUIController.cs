@@ -8,30 +8,40 @@ using System;
 public class PlayerUIController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI hpText;
-    [SerializeField] private Image redFlash;
-    private float redFlashTime = .15f;
+    [SerializeField] private Image redFlash, greenFlash;
+    private float flashTime = .15f;
 
     private void OnEnable()
     {
-        PlayerController.OnPlayerTakesDamage += HandlePlayerDamage;        
+        PlayerController.OnPlayerTakesDamage += HandlePlayerDamage;
+        PlayerController.OnPlayerGetsHealth += HandleHealthPickup;
     }
+
+    
 
     private void OnDisable()
     {
         PlayerController.OnPlayerTakesDamage -= HandlePlayerDamage;
+        PlayerController.OnPlayerGetsHealth -= HandleHealthPickup;
     }
 
-    private void HandlePlayerDamage(int damage)
+    private void HandleHealthPickup(int hp)
     {
-        hpText.text = "HP: " + damage;
-        StartCoroutine(FlashScreenRed());
+        hpText.text = "HP: " + hp;
+        StartCoroutine(FlashScreen(greenFlash));
     }
 
-    private IEnumerator FlashScreenRed()
+    private void HandlePlayerDamage(int hp)
     {
-        WaitForSeconds w = new WaitForSeconds(redFlashTime);
-        redFlash.enabled = true;
+        hpText.text = "HP: " + hp;
+        StartCoroutine(FlashScreen(redFlash));
+    }
+
+    private IEnumerator FlashScreen(Image img)
+    {
+        WaitForSeconds w = new WaitForSeconds(flashTime);
+        img.enabled = true;
         yield return w;
-        redFlash.enabled = false;
+        img.enabled = false;
     }
 }

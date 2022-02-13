@@ -8,14 +8,14 @@ public class PlayerController : MonoBehaviour
     public MMFeedbacks HitFeedback;
     public static PlayerController instance;
     public delegate void PlayerEvent(int damage);
-    public static PlayerEvent OnPlayerTakesDamage;
+    public static PlayerEvent OnPlayerTakesDamage, OnPlayerGetsHealth;
     [SerializeField] private bool invulnerableDebug;
     [SerializeField] private int startingHP;
     [SerializeField] private Material standardMat, invulMat;
     private MeshRenderer rend;
     private int curHP;
-    private bool invul;
-    private float invulTime = .5f, invulCount;
+   private bool invul;
+    [SerializeField]private float invulTime, invulCount;
     
 
     private void OnEnable()
@@ -42,7 +42,10 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
-        
+        if(invul)
+        {
+            return;
+        }
         curHP -= dmg;
         OnPlayerTakesDamage?.Invoke(curHP);
         HitFeedback?.PlayFeedbacks();
@@ -67,6 +70,7 @@ public class PlayerController : MonoBehaviour
         {
             curHP = startingHP;
         }
+        OnPlayerGetsHealth?.Invoke(curHP);
     }
 
     private void Die()
@@ -94,11 +98,15 @@ public class PlayerController : MonoBehaviour
         {
             TakeDamage(1);
         }
-        if (collision.gameObject.CompareTag("LevelBounds"))
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-           // TakeDamage(startingHP);
+            TakeDamage(1);
         }
     }
 
-    
+
 }

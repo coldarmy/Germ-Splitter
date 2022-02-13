@@ -14,8 +14,8 @@ public class PickUpController : MonoBehaviour
     public pickupType _type;
     public int numPickups;
     public bool fading;
+    public float energyAmt;
     [SerializeField] private float lifetime;
-
     private float life;
 
     private void OnEnable()

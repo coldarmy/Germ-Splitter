@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1109891330}
   - component: {fileID: 1535779122480506448}
   - component: {fileID: 1468748851482283087}
+  - component: {fileID: 1931648774077091306}
   m_Layer: 0
   m_Name: Player mutalisk
   m_TagString: Player
@@ -135,9 +136,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitFeedback: {fileID: 9038255153416252649}
   invulnerableDebug: 0
-  startingHP: 3
+  startingHP: 5
   standardMat: {fileID: 2100000, guid: fae53b468305eb64bace63d17b247bcd, type: 2}
   invulMat: {fileID: 2100000, guid: b6a6894b4cb28b54ebe97471895d2ad7, type: 2}
+  invulTime: 0.5
+  invulCount: 0
 --- !u!114 &1109891330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardBullet: {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
-  specialBullet: {fileID: 0}
+  specialBullet: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
   ShootFeedback: {fileID: 8721631062084231103}
   rb: {fileID: 0}
 --- !u!96 &1535779122480506448
@@ -277,6 +280,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1931648774077091306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337780731634523886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542d3927b866f334da647b48741d6421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curEnergy: 0
+  maxEnergy: 100
 --- !u!1 &2572340870607059928
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,5 +590,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0

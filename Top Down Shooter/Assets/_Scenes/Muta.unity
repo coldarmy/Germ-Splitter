@@ -1357,40 +1357,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1109891330, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
-      propertyPath: specialBullet
-      value: 
-      objectReference: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb,
-        type: 2}
-    - target: {fileID: 656782651466952711, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Active
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 656782651466952711, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: CameraShakeProperties.AmplitudeX
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 656782651466952711, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: CameraShakeProperties.AmplitudeY
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 2337780731634523886, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
       propertyPath: m_Name
       value: Player mutalisk
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337780731634523924, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: startingHP
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2337780731634523924, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: invulnerableDebug
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2337780731634523925, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
@@ -1447,33 +1417,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3993774173699035062, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: m_UseWorldSpace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8546918535822106161, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: Active
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8546918535822106161, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: ZoomDuration
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8546918535822106161, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: ZoomFieldOfView
-      value: 59
-      objectReference: {fileID: 0}
-    - target: {fileID: 8546918535822106161, guid: 8a0ae97d450e05045acdbe7a8056ca57,
-        type: 3}
-      propertyPath: ZoomTransitionDuration
-      value: 0.01
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 339846274561790926, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
 --- !u!1001 &3323482126768184267
 PrefabInstance:

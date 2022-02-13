@@ -5,10 +5,12 @@ using UnityEngine;
 public class PickUpHandler : MonoBehaviour
 {
     private PlayerController _playerController;
+    private PlayerEnergyController _energyController;
 
     private void OnEnable()
     {
         _playerController = GetComponentInParent<PlayerController>();
+        _energyController = _playerController.GetComponent<PlayerEnergyController>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -69,6 +71,7 @@ public class PickUpHandler : MonoBehaviour
         if(p._type == PickUpController.pickupType.energy)
         {
             //get energy
+            _energyController.ChangeEnergy(p.energyAmt);
         }
         p.gameObject.SetActive(false);
     }
