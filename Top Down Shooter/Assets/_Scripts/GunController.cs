@@ -13,6 +13,7 @@ public class GunController : MonoBehaviour
     private float shootCD, playerKB; // get these values from the bullet
     private float cooldown;
     private LineRenderer lr;
+    private PlayerEnergyController EnergyController;
     
     private void OnEnable()
     {;
@@ -20,6 +21,11 @@ public class GunController : MonoBehaviour
         AssignBulletValues(standardBullet.cooldown, standardBullet.playerKB);
         cooldown = 0;
 
+    }
+
+    private void Start()
+    {
+        EnergyController = PlayerController.instance.GetComponent<PlayerEnergyController>();
     }
 
     private void AssignBulletValues(float cd, float kickBack)
@@ -46,10 +52,13 @@ public class GunController : MonoBehaviour
 
     public void ShootSpecial(Vector3 dir)
     {
-        Debug.Log("shooting special");
-        BulletSpawner.instance.SpawnBullet(specialBullet, dir, this.transform.position, bulletOffset);
-        ShootFeedback?.PlayFeedbacks();
-        cooldown = shootCD;
+        if(EnergyController.CanShoot(specialBullet.energyCost))
+        {
+            BulletSpawner.instance.SpawnBullet(specialBullet, dir, this.transform.position, bulletOffset);
+            ShootFeedback?.PlayFeedbacks();
+            cooldown = shootCD;
+            EnergyController.ChangeEnergy(-specialBullet.energyCost);
+        }        
     }
 
     public bool CanShoot()

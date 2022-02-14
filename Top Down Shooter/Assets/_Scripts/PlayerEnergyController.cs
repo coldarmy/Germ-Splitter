@@ -14,4 +14,9 @@ public class PlayerEnergyController : MonoBehaviour
         curEnergy = Mathf.Clamp(curEnergy, 0f, maxEnergy);
         OnEnergyChanged?.Invoke(curEnergy);
     }
+
+    public bool CanShoot(float energy)
+    {
+        return energy <= curEnergy;
+    }
 }
