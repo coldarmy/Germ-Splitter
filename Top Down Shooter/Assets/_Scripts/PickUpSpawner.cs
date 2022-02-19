@@ -43,6 +43,8 @@ public class PickUpSpawner : MonoBehaviour
             pos += Vector3.forward * zOffset;
             SpawnPickUp(PickUpController.pickupType.energy, pos);
         }
+
+
         float h = UnityEngine.Random.Range(0, 1f);
         if(h >= hpChance)
         {
@@ -50,7 +52,15 @@ public class PickUpSpawner : MonoBehaviour
             zOffset = UnityEngine.Random.Range(-2, 2f);
             pos += Vector3.right * xOffset;
             pos += Vector3.forward * zOffset;
-            SpawnPickUp(PickUpController.pickupType.health, pos);
+
+            if(PlayerController.instance.AtFullHealth())
+            {
+                SpawnPickUp(PickUpController.pickupType.energy, pos);
+            }
+            else
+            {
+                SpawnPickUp(PickUpController.pickupType.health, pos);
+            }            
         }
     }
 

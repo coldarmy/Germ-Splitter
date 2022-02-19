@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int startingHP;
     [SerializeField] private Material standardMat, invulMat;
     private MeshRenderer rend;
-    private int curHP;
+   public int curHP;
    private bool invul;
     [SerializeField]private float invulTime, invulCount;
     
@@ -90,6 +90,11 @@ public class PlayerController : MonoBehaviour
             rend.material = standardMat;
         }
         invul = goingInvul;
+    }
+
+    public bool AtFullHealth()
+    {
+        return curHP == startingHP;
     }
 
     private void OnCollisionEnter(Collision collision)
