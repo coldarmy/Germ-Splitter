@@ -9,7 +9,7 @@ public class BulletController : MonoBehaviour
     private Rigidbody rb;
     Vector3 moveDir;
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         if(rb == null)
         {
@@ -49,10 +49,11 @@ public class BulletController : MonoBehaviour
     }
 
 
-    public void TurnOffBullet()
+    public virtual void TurnOffBullet()
     {
-       // rb.velocity = Vector3.zero;
-       // rb.angularVelocity = Vector3.zero;
+        // rb.velocity = Vector3.zero;
+        // rb.angularVelocity = Vector3.zero;
+        Debug.Log("turning off bullet");
         this.gameObject.SetActive(false);
     }
 }

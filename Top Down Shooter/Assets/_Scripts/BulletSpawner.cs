@@ -51,8 +51,6 @@ public class BulletSpawner : MonoBehaviour
                     bulletPool[i].transform.position = pos;
                     bulletPool[i].transform.position += (bulletPool[i].transform.forward * offset);
                     bulletPool[i].gameObject.SetActive(true);
-                    //Debug.Log("bullet spawned!", bulletPool[i].gameObject);
-                   // Debug.Break();
                     break;
                 }
                 else

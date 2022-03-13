@@ -4816,6 +4816,7 @@ GameObject:
   - component: {fileID: 1173017816410461491}
   - component: {fileID: 4553769301196850734}
   - component: {fileID: 4129932913047704269}
+  - component: {fileID: 4165005287910055967}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -4846,12 +4847,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2836085010465616092}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d067cadb1c721e04d889efc2c6d6b478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myBulletData: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
+  count: 0
+  lifeTime: 0
+  moveSpeed: 0
 --- !u!136 &4553769301196850734
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4878,6 +4882,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde04a390806faa48b4dde5a033f1b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myBulletData: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
+  count: 0
+  lifeTime: 0
+  moveSpeed: 0
+  explosion: {fileID: 0}
+--- !u!114 &4165005287910055967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2836085010465616092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccad4242ec3994647bb3b38ade767152, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 4708416551392795355, guid: f273e7647d3c8314c882b602285b765f,
+    type: 3}
 --- !u!1 &5999067433733078552
 GameObject:
   m_ObjectHideFlags: 0

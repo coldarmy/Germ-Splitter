@@ -2,25 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBulletController : MonoBehaviour
+public class PlayerBulletController : BulletController
 {
-    private BulletController myBulletController;
+    public delegate void BulletEvent(ExplosionController ex);
+    public static BulletEvent SpawnExplosion;
+    //private BulletController myBulletController;
+    [SerializeField] ExplosionController explosion;
 
     private void OnEnable()
     {
-        if (myBulletController == null)
-        {
-            myBulletController = GetComponent<BulletController>();
-        }
+        base.OnEnable();
     }
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("hit enemy");
-            collision.gameObject.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletController.myBulletData.damage);
-            myBulletController.TurnOffBullet();
+            // Debug.Log("hit enemy");
+            // collision.gameObject.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletController.myBulletData.damage);
+            collision.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletData.damage);
+            Debug.Log("touching enemy");
+
+            TurnOffBullet();
         }
+    }
+
+    public override void TurnOffBullet()
+    {
+        if(explosion != null)
+        {
+            SpawnExplosion?.Invoke(explosion);
+        }
+        base.TurnOffBullet();
     }
 }
