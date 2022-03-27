@@ -37,6 +37,13 @@ public class GunController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("pressing p");
+            ObjectPoolManager.instance.SpawnExplosion(transform.position);
+
+        }
+
         if (cooldown > 0)
         {
             cooldown -= Time.deltaTime;

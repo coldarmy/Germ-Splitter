@@ -7,6 +7,17 @@ public class ExplosionController : MonoBehaviour
     [SerializeField] private float lifeTime, growSpeed;
     public int damage;
     private float curLife;
+    private Poolable _poolable;
+
+    private void OnEnable()
+    {
+        if(_poolable == null)
+        {
+            _poolable = GetComponent<Poolable>();
+        }
+
+        SpawnExplosion(damage);
+    }
 
     private void Update()
     {
@@ -15,7 +26,7 @@ public class ExplosionController : MonoBehaviour
         curLife += Time.deltaTime;
         if(curLife >= lifeTime)
         {
-            Destroy(this.gameObject);
+            Disable();
         }
 
     }
@@ -28,6 +39,11 @@ public class ExplosionController : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    private void Disable()
+    {
+        //this.gameObject.SetActive(false);
+        _poolable.ReleaseToPool();
+    }
 
 
 }
