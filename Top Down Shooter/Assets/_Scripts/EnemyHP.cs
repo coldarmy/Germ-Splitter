@@ -35,6 +35,14 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("explosion"))
+        {
+            TakeDamage(other.GetComponent<ExplosionController>().damage);
+        }
+    }
+
     private void Die()
     {
         DeathFeedback?.PlayFeedbacks();
