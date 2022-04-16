@@ -37,12 +37,12 @@ public class GunController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+      /*  if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("pressing p");
-            ObjectPoolManager.instance.SpawnExplosion(transform.position);
+           // ObjectPoolManager.instance.SpawnExplosion(transform.position);
 
-        }
+        }*/
 
         if (cooldown > 0)
         {
@@ -61,6 +61,7 @@ public class GunController : MonoBehaviour
     {
         if(EnergyController.CanShoot(specialBullet.energyCost))
         {
+            Debug.Log("spawning special");
             BulletSpawner.instance.SpawnBullet(specialBullet, dir, this.transform.position, bulletOffset);
             ShootFeedback?.PlayFeedbacks();
             cooldown = shootCD;

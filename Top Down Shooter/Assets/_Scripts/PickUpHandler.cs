@@ -29,7 +29,7 @@ public class PickUpHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("touching: " + other.name);
+        //Debug.Log("touching: " + other.name);
         if(other.CompareTag("pickup"))
         {
 

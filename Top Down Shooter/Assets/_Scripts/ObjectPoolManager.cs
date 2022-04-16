@@ -44,6 +44,7 @@ public class ObjectPoolManager : MonoBehaviour
 
     public void SpawnExplosion(Vector3 pos)
     {
+        Debug.Log("spawning explosion");
         spawnPos = pos;
         _explosionPool.Get();
     }

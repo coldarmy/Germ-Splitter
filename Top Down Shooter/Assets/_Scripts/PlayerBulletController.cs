@@ -31,7 +31,8 @@ public class PlayerBulletController : BulletController
     {
         if(explosion != null)
         {
-            SpawnExplosion?.Invoke(explosion);
+            // SpawnExplosion?.Invoke(explosion);
+            ObjectPoolManager.instance.SpawnExplosion(transform.position);
         }
         base.TurnOffBullet();
     }

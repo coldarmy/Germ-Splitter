@@ -17,17 +17,11 @@ public class RocketController : MonoBehaviour
             myBulletController = GetComponent<BulletController>();
         }
     }
-
-    public void SpawnExplosion()
-    {
-        ExplosionController ex = Instantiate(explosionPrefab);
-        ex.transform.position = transform.position;
-        ex.transform.rotation = transform.rotation;
-        ex.SpawnExplosion(myBulletController.myBulletData.damage);
-    }
+    
 
     private void OnDisable()
     {
-        
+        Debug.Log("asking to spawn explosion");
+        ObjectPoolManager.instance.SpawnExplosion(transform.position);
     }
 }
