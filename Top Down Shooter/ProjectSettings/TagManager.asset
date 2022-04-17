@@ -10,6 +10,7 @@ TagManager:
   - World
   - NoMask
   - pickup
+  - explosion
   layers:
   - Default
   - TransparentFX
