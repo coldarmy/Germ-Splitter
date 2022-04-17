@@ -53,7 +53,7 @@ public class BulletController : MonoBehaviour
     {
         // rb.velocity = Vector3.zero;
         // rb.angularVelocity = Vector3.zero;
-        Debug.Log("turning off bullet");
+        //Debug.Log("turning off bullet");
         this.gameObject.SetActive(false);
     }
 }

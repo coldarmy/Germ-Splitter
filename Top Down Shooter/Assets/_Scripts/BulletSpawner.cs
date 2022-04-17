@@ -60,7 +60,7 @@ public class BulletSpawner : MonoBehaviour
             }
             else
             {
-                Debug.Log("no inactive bullets of this type");
+                //Debug.Log("no inactive bullets of this type");
             }
         }
     } 

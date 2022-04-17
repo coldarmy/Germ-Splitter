@@ -1,0 +1,1444 @@
+Using pre-set license
+Built from '2021.2/release' branch; Version is '2021.2.15f1 (3b8567f665bb) revision 3900775'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16205 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/colda/Documents/GitHub/TopDownMutaShooter/Top Down Shooter
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+61456
+Successfully changed project path to: C:/Users/colda/Documents/GitHub/TopDownMutaShooter/Top Down Shooter
+C:/Users/colda/Documents/GitHub/TopDownMutaShooter/Top Down Shooter
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 51.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.15f1 (3b8567f665bb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/colda/Documents/GitHub/TopDownMutaShooter/Top Down Shooter/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     6023 MB
+    Driver:   30.0.15.1123
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006488 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 51.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.569 seconds
+Domain Reload Profiling:
+	ReloadAssembly (570ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (391ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (97ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (224ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (51ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003229 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Domain Reload Profiling:
+	ReloadAssembly (977ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (788ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (265ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2790 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (1.3 MB). Loaded Objects now: 3255.
+Memory consumption went from 265.3 MB to 263.9 MB.
+Total: 3.490500 ms (FindLiveObjects: 0.278500 ms CreateObjectMapping: 0.337100 ms MarkObjects: 2.505500 ms  DeleteObjects: 0.368300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1887032.046695 seconds.
+  path: Assets/_Prefabs/enemies/Stalker.prefab
+  artifactKey: Guid(2744bb3fe580cef4d9675107069e4a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/enemies/Stalker.prefab using Guid(2744bb3fe580cef4d9675107069e4a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb579807c14706959858eccc6b4170c') in 0.112501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.368875 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Camera/LevelLimits.cs
+  artifactKey: Guid(0fbf0d192a3f18f4e9788bbe022dbc0d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Camera/LevelLimits.cs using Guid(0fbf0d192a3f18f4e9788bbe022dbc0d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aac06c6700fe359ee695ae954efa33b8') in 0.055920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/MultiplayerLevelManager.cs
+  artifactKey: Guid(9e2983dd77e85bf47b1318e2de16e13f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/MultiplayerLevelManager.cs using Guid(9e2983dd77e85bf47b1318e2de16e13f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5c899aa0f661afdb37a9a2522151d039') in 0.008759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelFootstep3.wav
+  artifactKey: Guid(e01aba66628423e4ab94d0ffa499fa24) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelFootstep3.wav using Guid(e01aba66628423e4ab94d0ffa499fa24) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '83496b9ea356e9bc56c97f19a3f5b49f') in 0.072663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsLeaf.png
+  artifactKey: Guid(ce10d3a77ed4dad4bb2ae0c76baa641b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsLeaf.png using Guid(ce10d3a77ed4dad4bb2ae0c76baa641b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '034da63f6c050d104336fb74be97c176') in 0.017090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsPaving.png
+  artifactKey: Guid(30482aebb23a4f04ba78ad3ed349542d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsPaving.png using Guid(30482aebb23a4f04ba78ad3ed349542d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b31dcb882c5dc1ebcde05febde37f1c4') in 0.015599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Spawn/GoToLevelEntryPoint.cs
+  artifactKey: Guid(d0514923403e9914a8af28838e64a4f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Spawn/GoToLevelEntryPoint.cs using Guid(d0514923403e9914a8af28838e64a4f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e82f4e5350fa6c44fa811b9b9eda4daf') in 0.006670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExploDudesLogo.png
+  artifactKey: Guid(a02198c4249fa8c4d8ff5fef0247bca6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExploDudesLogo.png using Guid(a02198c4249fa8c4d8ff5fef0247bca6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f3f9fdd963a68fc6de12ec218c58e0ea') in 0.015884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/ScriptsInputSystem/InputActions/TopDownEngineInputActions.cs
+  artifactKey: Guid(686ecd6f4e5f8b84092301998605dc74) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/ScriptsInputSystem/InputActions/TopDownEngineInputActions.cs using Guid(686ecd6f4e5f8b84092301998605dc74) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fbfffcab501a7277f72272571f5a202b') in 0.007066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/LevelManager.cs
+  artifactKey: Guid(b4e997f38a2e2884e89b9bd8ad830fee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/LevelManager.cs using Guid(b4e997f38a2e2884e89b9bd8ad830fee) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dc03c7a8664a0861458def926fd0914f') in 0.007109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/ButtonPrompt.cs
+  artifactKey: Guid(603bc0faa70903c40bffafa98618e922) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/ButtonPrompt.cs using Guid(603bc0faa70903c40bffafa98618e922) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '51d1f1366c10f3b2a51d110deaad8046') in 0.006296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/Loot.cs
+  artifactKey: Guid(8d9bf1ac07f3659498e89157301c9746) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/Loot.cs using Guid(8d9bf1ac07f3659498e89157301c9746) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '449a45f50c27f33327d9a985601597ab') in 0.006648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Sound/PersistentBackgroundMusic.cs
+  artifactKey: Guid(0b40e925b573770499e28eae3c7fd038) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Sound/PersistentBackgroundMusic.cs using Guid(0b40e925b573770499e28eae3c7fd038) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7e262d87dddefda735e77c4b01c4f9f9') in 0.006870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/Switch.cs
+  artifactKey: Guid(e935ff9b11af9d849820131785a42637) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/Switch.cs using Guid(e935ff9b11af9d849820131785a42637) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '20e02f3e8c76100aa7c415a6ddbf900b') in 0.005616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MovingPlatform3D.cs
+  artifactKey: Guid(5e82422752018804d8fdc327cd44dcda) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MovingPlatform3D.cs using Guid(5e82422752018804d8fdc327cd44dcda) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2bfa86c98e11fed81f4e528625d52373') in 0.006675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesCrate.cs
+  artifactKey: Guid(0b9c9a6f8fd669a49b33311111dcc3e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesCrate.cs using Guid(0b9c9a6f8fd669a49b33311111dcc3e1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7aa39dcf4286018e42cb5bbec28edab7') in 0.005648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Materials/GrasslandsHornsDashParticlesMaterial.mat
+  artifactKey: Guid(d432b778514c91b46bad994aa1e62a27) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Materials/GrasslandsHornsDashParticlesMaterial.mat using Guid(d432b778514c91b46bad994aa1e62a27) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ade1dc709b69c71355300e462312746c') in 0.012604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelHurt2.wav
+  artifactKey: Guid(4a0c2412b90104547b4378346bc33422) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelHurt2.wav using Guid(4a0c2412b90104547b4378346bc33422) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd0b2ab3c10f336f5d67153644ddeddf1') in 0.008786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Sounds/ExplodudesSong.wav
+  artifactKey: Guid(dad350816c72ebc4ba796c001b0c253d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Sounds/ExplodudesSong.wav using Guid(dad350816c72ebc4ba796c001b0c253d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5683e726c2904f0db0bbaa2b1225d313') in 0.007204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/FallingPlatform3D.cs
+  artifactKey: Guid(6311531b6ab290e40a50b9a9bb7ea725) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/FallingPlatform3D.cs using Guid(6311531b6ab290e40a50b9a9bb7ea725) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1eb8735cbd091774154f0f4fa9dc5f20') in 0.006953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsFence.png
+  artifactKey: Guid(8200ae54d0d475044a71d07726fb3db0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsFence.png using Guid(8200ae54d0d475044a71d07726fb3db0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '309eba1d33131b4e6c417c8ac0a73fc6') in 0.012676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/MMFeedbacks/MMFeedbackTopDownEngineFloatingText.cs
+  artifactKey: Guid(8e79ef91306862a44829371e0667ed36) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/MMFeedbacks/MMFeedbackTopDownEngineFloatingText.cs using Guid(8e79ef91306862a44829371e0667ed36) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf45264826d127ef5fa8866c7d4c9624') in 0.007274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesRed.png
+  artifactKey: Guid(7d10dd06b1fe2f74fb4b39d2699129bf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesRed.png using Guid(7d10dd06b1fe2f74fb4b39d2699129bf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f75828119d4665810c03be146f7ef1e9') in 0.010671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/DialogueZone.cs
+  artifactKey: Guid(212dec7c41265f84db120d8bb58c8385) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/DialogueZone.cs using Guid(212dec7c41265f84db120d8bb58c8385) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec42f887ecb5d23819f07d4e3fabd874') in 0.005943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/AmmoDisplay.cs
+  artifactKey: Guid(b38b20e816353dd44a4b02f9fb1fa524) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/GUI/AmmoDisplay.cs using Guid(b38b20e816353dd44a4b02f9fb1fa524) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd91f57e69bc6a3f0f4f0d50174e96cbf') in 0.007064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesBlue.png
+  artifactKey: Guid(3ac76a678b5e113498f627901e992b74) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesBlue.png using Guid(3ac76a678b5e113498f627901e992b74) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0f7a0c32518a30448574e87093798116') in 0.010410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Materials/ExplodudesSparksMaterial.mat
+  artifactKey: Guid(1af310787d7c30a46b549d52b15d2fb7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Materials/ExplodudesSparksMaterial.mat using Guid(1af310787d7c30a46b549d52b15d2fb7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '54549e72eb2d550bfeb49915f9abcccc') in 0.006219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Materials/ExplodudesFootstepsMaterial.mat
+  artifactKey: Guid(527f0e8fc961aff4b84b3b9bf45a17ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Materials/ExplodudesFootstepsMaterial.mat using Guid(527f0e8fc961aff4b84b3b9bf45a17ed) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '09698ef2d2b10ff1372764c5580daded') in 0.005930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsRed.png
+  artifactKey: Guid(1daac6a1ab2f1b34a8faba74c9e126f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsRed.png using Guid(1daac6a1ab2f1b34a8faba74c9e126f9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c87cc78731bc22092e2bf123b23ecee5') in 0.027100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/InventoryEngineHealth.cs
+  artifactKey: Guid(0b441ccf6b8a5214eb494cc55d6dc414) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/InventoryEngineHealth.cs using Guid(0b441ccf6b8a5214eb494cc55d6dc414) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5684af433f60b931514241b72caaf437') in 0.006462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesGreen.png
+  artifactKey: Guid(f5dc437e68c71e9498702f8766c46855) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesGreen.png using Guid(f5dc437e68c71e9498702f8766c46855) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e7e2bf7dbff9af8a6f709d2be3d22b00') in 0.010773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Spawn/Respawnable.cs
+  artifactKey: Guid(9d31dbacd56803b408388fee8ce21cce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Spawn/Respawnable.cs using Guid(9d31dbacd56803b408388fee8ce21cce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b6ee6d7f299dbd4c124436b3d6e907ad') in 0.007322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Sprites/MMDoubleSpriteMask.cs
+  artifactKey: Guid(647771f87ed26804fb9993fa9f1bb430) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Sprites/MMDoubleSpriteMask.cs using Guid(647771f87ed26804fb9993fa9f1bb430) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9e5678ae35666efddefdd814c9a85fc7') in 0.006723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesBomb.cs
+  artifactKey: Guid(dae098495538e1b46a19868174175cb2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesBomb.cs using Guid(dae098495538e1b46a19868174175cb2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4210886fe0d68a7f0ee4fa5b5d648bf9') in 0.006983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Materials/GrasslandsCloudsMaterial.mat
+  artifactKey: Guid(fe757976d734a59468ef5b03a6867964) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Materials/GrasslandsCloudsMaterial.mat using Guid(fe757976d734a59468ef5b03a6867964) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '53d969d663d397088c55ce9281a5d713') in 0.008042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Models/ExplodudeBomb.fbx
+  artifactKey: Guid(0f79ce428d503024191003a42b10041e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Models/ExplodudeBomb.fbx using Guid(0f79ce428d503024191003a42b10041e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f24728b6bda77642c65ff23e470a35d5') in 0.019844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/GUIManager.cs
+  artifactKey: Guid(b45c07d1fd86b2c488aeed1a9e84e924) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Managers/GUIManager.cs using Guid(b45c07d1fd86b2c488aeed1a9e84e924) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '931d559cabf4622b062a7effaac0a8ff') in 0.007895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/ProximityManaged.cs
+  artifactKey: Guid(794539ff210c56d4d8fe1b215440a6c7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/ProximityManaged.cs using Guid(794539ff210c56d4d8fe1b215440a6c7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '119e451e8e0ac2eb1ba32be90ba85d70') in 0.008636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Scripts/GrasslandHUD.cs
+  artifactKey: Guid(6bc414d7b663c0e4b88617e76274e06a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Scripts/GrasslandHUD.cs using Guid(6bc414d7b663c0e4b88617e76274e06a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a029b1aaef070f8bc0b08aeae1dc8ad') in 0.007116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MagneticEnabler.cs
+  artifactKey: Guid(b354a97a865c4734cad883616a8e910e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MagneticEnabler.cs using Guid(b354a97a865c4734cad883616a8e910e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '41c3605774b2a183f69f519cf2237546') in 0.007159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelReload.wav
+  artifactKey: Guid(c5544e72c7419464ebbf12739c61cf67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelReload.wav using Guid(c5544e72c7419464ebbf12739c61cf67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f21f7d1190d095254ec9420e2007bd7b') in 0.006225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Models/FBIGlasses.fbx
+  artifactKey: Guid(ffc2b034505d57940b1ac495f695fd83) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Models/FBIGlasses.fbx using Guid(ffc2b034505d57940b1ac495f695fd83) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2e009063c17097c0b533108f496bcc78') in 0.016802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsBlue.png
+  artifactKey: Guid(1616429a205fd5d4b9a988b76d6a6e57) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsBlue.png using Guid(1616429a205fd5d4b9a988b76d6a6e57) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f7766f0fe42cda4e7f0f754d3bdbb8dc') in 0.031859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/Magnetic.cs
+  artifactKey: Guid(cc12c2547bc5f3348964604b81f68480) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/Magnetic.cs using Guid(cc12c2547bc5f3348964604b81f68480) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bdf08f22d8c5df6a511f01cf09ac6af1') in 0.006261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsYellow.png
+  artifactKey: Guid(2bdea9333aa0e084d9ad6628ed8a96e9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsHornsYellow.png using Guid(2bdea9333aa0e084d9ad6628ed8a96e9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4b7752fc4d6ac2b32b15b3f65c006cb3') in 0.030731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesHeadGreen.png
+  artifactKey: Guid(03c39f69d00ad334e82419bebf629b3c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesHeadGreen.png using Guid(03c39f69d00ad334e82419bebf629b3c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '43f7a87c78731532bce1fc5557f5b1a5') in 0.022395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MovingPlatform2D.cs
+  artifactKey: Guid(176e896cbc4a1eb4fadac3c3f910053b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Environment/MovingPlatform2D.cs using Guid(176e896cbc4a1eb4fadac3c3f910053b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '099f211463e5143685fdbe6896faf83a') in 0.007353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/ColonelAnimator.controller
+  artifactKey: Guid(e8ff47342c8095c42ba9fac34ab4a1c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/ColonelAnimator.controller using Guid(e8ff47342c8095c42ba9fac34ab4a1c3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c1df3dcc8debf33f438e8d27343aeaef') in 0.007782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/Coin.cs
+  artifactKey: Guid(c704680c90181c648a0b5cb809aa40ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Items/Coin.cs using Guid(c704680c90181c648a0b5cb809aa40ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13c8e4d438981453887d2497a5e3a976') in 0.007187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesStartScreen.cs
+  artifactKey: Guid(d6baf448a47f78443a785587e6c38e90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Scripts/ExplodudesStartScreen.cs using Guid(d6baf448a47f78443a785587e6c38e90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1f0518dff72b43e1a4a2320969539a4d') in 0.007791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Models/Colonel@T-Pose.fbx
+  artifactKey: Guid(d415b3ec24a83774e8f3355f2a621f8e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Models/Colonel@T-Pose.fbx using Guid(d415b3ec24a83774e8f3355f2a621f8e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '588ed0906a1e2f852872aa6e58374249') in 0.023354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesYellow.png
+  artifactKey: Guid(d7d38b4c1595b9846a5846d8fee22ebf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Explodudes/Textures/ExplodudesYellow.png using Guid(d7d38b4c1595b9846a5846d8fee22ebf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7b498cec9c9fbf32703379706a1cbf24') in 0.010534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelHurt3.wav
+  artifactKey: Guid(4ef429c0de8fc4141ab936f840c859d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Sounds/ColonelHurt3.wav using Guid(4ef429c0de8fc4141ab936f840c859d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '711e913d15a2836171727ee18cd050b4') in 0.006708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/ScriptsInputSystem/Prefabs/Minimal3DCameras - InputSystem Multiplayer.prefab
+  artifactKey: Guid(ee5912a739553564283ca475aa0e794c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/ScriptsInputSystem/Prefabs/Minimal3DCameras - InputSystem Multiplayer.prefab using Guid(ee5912a739553564283ca475aa0e794c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a0a5ffb965e194a68286af8b1814986') in 0.073914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.363054 seconds.
+  path: Assets/_Prefabs/enemies/Melee Chaser.prefab
+  artifactKey: Guid(8a300ba491f29ee4cbe0bbc7de6cf080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/enemies/Melee Chaser.prefab using Guid(8a300ba491f29ee4cbe0bbc7de6cf080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68e37376cb8a81cc617455f335b0949') in 0.017882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.641935 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsTimeCounterBackground.png
+  artifactKey: Guid(857a36a9cd03cc940881bb1474fef140) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsTimeCounterBackground.png using Guid(857a36a9cd03cc940881bb1474fef140) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '62abe6fb58fe6423138885473fee30c7') in 0.012602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonWallsTiles.asset
+  artifactKey: Guid(a3d3669b43192004aa891f78ebdcf58d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonWallsTiles.asset using Guid(a3d3669b43192004aa891f78ebdcf58d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2bfa44c7ad04c8e685fb4d3f85095b39') in 0.008071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaGuideAnimatorController.controller
+  artifactKey: Guid(908f66fedb66570449afb9a9105a1d53) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaGuideAnimatorController.controller using Guid(908f66fedb66570449afb9a9105a1d53) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '49d455c143a8128d21cd9f617b4aaff5') in 0.007599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaLaser.ogg
+  artifactKey: Guid(4a3d396aebfea24409285b909d564a58) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaLaser.ogg using Guid(4a3d396aebfea24409285b909d564a58) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ec67193fe83919caa509260cea932505') in 0.010331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaTeleport.wav
+  artifactKey: Guid(2dfac19630f6de94c8b60c118a6c07b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaTeleport.wav using Guid(2dfac19630f6de94c8b60c118a6c07b0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d5f7f6d971b5adea08065d09007d7d7') in 0.008185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaPixelDustMaterial.mat
+  artifactKey: Guid(90b4a85560efd8044ba3c7c82bef32f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaPixelDustMaterial.mat using Guid(90b4a85560efd8044ba3c7c82bef32f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6d86c10d225a81e4a516b419441e5c4b') in 0.008138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonGroundBeigeStairsTiles.asset
+  artifactKey: Guid(5314d6f309ab09243aba1cb697213b8c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonGroundBeigeStairsTiles.asset using Guid(5314d6f309ab09243aba1cb697213b8c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '25ae307b97f794ad64d0b4f7f0464590') in 0.006607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaSwordSlash.anim
+  artifactKey: Guid(65a4aa8f1936c5641ae4f1ff0255bb34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaSwordSlash.anim using Guid(65a4aa8f1936c5641ae4f1ff0255bb34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c209d38816eb39bf33043dfa460e9810') in 0.011626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaShotgun.ogg
+  artifactKey: Guid(592d080ffbf62d9469ec0da3a406bd08) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaShotgun.ogg using Guid(592d080ffbf62d9469ec0da3a406bd08) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f2fc270cf0a97b6cfe16d99f68866a0') in 0.010358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMagnum2.ogg
+  artifactKey: Guid(03372090399bb424d81d08beb68d6480) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMagnum2.ogg using Guid(03372090399bb424d81d08beb68d6480) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '50565260e76754fa8ff7603fd5c8c062') in 0.008424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaIdle.anim
+  artifactKey: Guid(61ebe5202507b564e950586c14e3461a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaIdle.anim using Guid(61ebe5202507b564e950586c14e3461a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5e7690a40aecf856c263c4f415f72b91') in 0.007041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMachineGun2.ogg
+  artifactKey: Guid(24a73d168edddfd41ac460581c12f38a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMachineGun2.ogg using Guid(24a73d168edddfd41ac460581c12f38a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '662da32bc2e6cd5a15a90c46c1a6536f') in 0.006946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-grasslands.png
+  artifactKey: Guid(3b2742d373e8b9d4986b396640cbf222) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-grasslands.png using Guid(3b2742d373e8b9d4986b396640cbf222) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '605d87e47a1c3eb36b6303b99f8ac8ea') in 0.009429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsWater.png
+  artifactKey: Guid(704c91aaf5f4d2849870d811230cfc61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Sprites/GrasslandsWater.png using Guid(704c91aaf5f4d2849870d811230cfc61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cec0080ab0a692496b86c6f0f8a8d2d0') in 0.019901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDead.anim
+  artifactKey: Guid(0a72e1e47d7a2b24685ae9dd926fbd8f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDead.anim using Guid(0a72e1e47d7a2b24685ae9dd926fbd8f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '145996a1c6a1ad157e393f8fda45ed45') in 0.006572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Prefabs/LevelSelectionPixelCorgi.prefab
+  artifactKey: Guid(cfbe0dff5538c1a488c3dff198a48069) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Prefabs/LevelSelectionPixelCorgi.prefab using Guid(cfbe0dff5538c1a488c3dff198a48069) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7af1da446ad1c55dfa58a66cd67b650d') in 0.014222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Tiles/GrasslandsFenceTiles.asset
+  artifactKey: Guid(48073b582651ee543a065bbed99d6d4b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Grasslands/Tiles/GrasslandsFenceTiles.asset using Guid(48073b582651ee543a065bbed99d6d4b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '19b780252e079c52e2be44f96fd1a9a3') in 0.006371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaCollectionExplosionRedMaterial.mat
+  artifactKey: Guid(f1e4d2956e79e7c49a2df05fb2ba8bd9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaCollectionExplosionRedMaterial.mat using Guid(f1e4d2956e79e7c49a2df05fb2ba8bd9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95d48cb11b5278c040c96eec1388f253') in 0.007928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMachineGun1.ogg
+  artifactKey: Guid(e2e16f753454a294cbe41db217ec9739) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaMachineGun1.ogg using Guid(e2e16f753454a294cbe41db217ec9739) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '51ca44335cce6e007452abe74be7a99e') in 0.007824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_Prefabs/enemies/Chaser Shooter.prefab
+  artifactKey: Guid(ba71b7396910a5f44ad3b69b440572d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/enemies/Chaser Shooter.prefab using Guid(ba71b7396910a5f44ad3b69b440572d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e22c5c2f67e6edb409160a619038ce') in 0.015239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonGroundGreyCheckersDarkTiles.asset
+  artifactKey: Guid(dc3473244c955864cb10373d32dfa16a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Tiles/KoalaDungeonGroundGreyCheckersDarkTiles.asset using Guid(dc3473244c955864cb10373d32dfa16a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1758c5e8c29f265694e5a217b2dab4e') in 0.006674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDamage.anim
+  artifactKey: Guid(7c6d0b4a79202454682df6c718e788a8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDamage.anim using Guid(7c6d0b4a79202454682df6c718e788a8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dd9cbb0acfcd4086549f0eaaf8670fe4') in 0.007426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaLocked.ogg
+  artifactKey: Guid(7919f657729aeb94f86b283f76d88172) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaLocked.ogg using Guid(7919f657729aeb94f86b283f76d88172) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b21339217c5211c99ad91db397a203f9') in 0.009712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonSwitchAnimatorController.controller
+  artifactKey: Guid(5fa32075a8331c749ad2fd1f25839989) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonSwitchAnimatorController.controller using Guid(5fa32075a8331c749ad2fd1f25839989) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd10577b9e5a9e362e67c3a94b6639824') in 0.005781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaWalking.anim
+  artifactKey: Guid(86652de73d0844e44ace0ad75dc8f25c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaWalking.anim using Guid(86652de73d0844e44ace0ad75dc8f25c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b07747acf460ecfe35b858a1535de8e8') in 0.006490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaWeaponsBulletShotgunMaterial.mat
+  artifactKey: Guid(9d00549d26dedfb4d9e07367f9a1d80a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaWeaponsBulletShotgunMaterial.mat using Guid(9d00549d26dedfb4d9e07367f9a1d80a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '378a81e1f67f648254e505caef413355') in 0.007125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaGunBulletMaterial.mat
+  artifactKey: Guid(6b6fc11d534b7e049a8267efd5722496) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaGunBulletMaterial.mat using Guid(6b6fc11d534b7e049a8267efd5722496) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3c869279ef6a3d271d32affa9092275b') in 0.006659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaHealthAnimatorController.controller
+  artifactKey: Guid(aff073d757d1ab74f957b88efee609d5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaHealthAnimatorController.controller using Guid(aff073d757d1ab74f957b88efee609d5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f853584026be680712360163cea1dc00') in 0.008416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaSwordSlash2.anim
+  artifactKey: Guid(4903e4710282f0049b9d6be9533feccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaSwordSlash2.anim using Guid(4903e4710282f0049b9d6be9533feccf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b28e13ed1255986c46810fb25f6c2f9d') in 0.007604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaPickupAnimatorController.controller
+  artifactKey: Guid(b6e5bb3c434adfd4b9977f7ad091bb3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaPickupAnimatorController.controller using Guid(b6e5bb3c434adfd4b9977f7ad091bb3d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'beae0ed0e568fb5b13007cd525105e31') in 0.007425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaSteps1.ogg
+  artifactKey: Guid(0e68e10d6bc130d438acd7a709a28f5b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaSteps1.ogg using Guid(0e68e10d6bc130d438acd7a709a28f5b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3da24510d22276b2f73053c78029b370') in 0.007355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaSwordAnimatorController.controller
+  artifactKey: Guid(de5322e2bfa31154781a634506db54ba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaSwordAnimatorController.controller using Guid(de5322e2bfa31154781a634506db54ba) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c13b5eb07ed673a6bc0013a17d7d94e6') in 0.008787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-koala-dungeon.png
+  artifactKey: Guid(b5307bb468bcc474d96b532724db7510) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-koala-dungeon.png using Guid(b5307bb468bcc474d96b532724db7510) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c516e7b766ff8b3fe05c9652a09324f7') in 0.011792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Prefabs/LevelSelectionCarousel.prefab
+  artifactKey: Guid(90948bd6e091f7346bc9853d09281e32) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Prefabs/LevelSelectionCarousel.prefab using Guid(90948bd6e091f7346bc9853d09281e32) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b307503e4062ef7c002970d3814d55f') in 0.025434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/MMSpriteHDR.shader
+  artifactKey: Guid(a0480ba495373eb4395df15c5c713ef8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/MMSpriteHDR.shader using Guid(a0480ba495373eb4395df15c5c713ef8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '452704815e7fcf4990e3c18d311fac14') in 0.012372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonChestAnimatorController.controller
+  artifactKey: Guid(58f1ff24e995bf04685597c211e19b68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonChestAnimatorController.controller using Guid(58f1ff24e995bf04685597c211e19b68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd504bb9c07cabd232d34a3d156028c78') in 0.007118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaRun.anim
+  artifactKey: Guid(3e142754bbd7d89479996590ca6f6355) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaNinjaRun.anim using Guid(3e142754bbd7d89479996590ca6f6355) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '46058ecf65307d68613ff7df97247633') in 0.006998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal2D-rooms2.png
+  artifactKey: Guid(bedcb0bf73e84eb46b94ab2000210c61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal2D-rooms2.png using Guid(bedcb0bf73e84eb46b94ab2000210c61) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72149f08f7913909a2376f7463d59041') in 0.011911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-loft.png
+  artifactKey: Guid(a173cc37ae7bb09448f80b53b7f4cc94) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-loft.png using Guid(a173cc37ae7bb09448f80b53b7f4cc94) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa8cdc7ad1ec30ff8f0de8555c1c5f57') in 0.011422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaSwordAnimatorController.controller
+  artifactKey: Guid(e64b57d28c476b444b17eecf070bb298) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaSwordAnimatorController.controller using Guid(e64b57d28c476b444b17eecf070bb298) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13189d7dcc30ed9b48cdad5e123e8869') in 0.006726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal2D.png
+  artifactKey: Guid(b6e9fd7fcb3cbb94c8b23bd390101d1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal2D.png using Guid(b6e9fd7fcb3cbb94c8b23bd390101d1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3f61e7d68f99bedc617a4ed40be705b1') in 0.010663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaPickupShadow.anim
+  artifactKey: Guid(0aebbaf0b55210b418441a131a018dd0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaPickupShadow.anim using Guid(0aebbaf0b55210b418441a131a018dd0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f85bd71355db544723da77d5616f146') in 0.007532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaAnimatorController.controller
+  artifactKey: Guid(91b83942a92301949b1e0d318f032906) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaAnimatorController.controller using Guid(91b83942a92301949b1e0d318f032906) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '80e845212bc9d0a0dfa9678af8bc0588') in 0.007186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaShotgunBulletMaterial.mat
+  artifactKey: Guid(3f6b0a334e5a4b44cab8e9afcdf6899a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaShotgunBulletMaterial.mat using Guid(3f6b0a334e5a4b44cab8e9afcdf6899a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5c69ee1cf2fd156cba04934f01e93ebb') in 0.007425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaImpact.wav
+  artifactKey: Guid(84a9746d4ee81e841b689a625e33c590) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaImpact.wav using Guid(84a9746d4ee81e841b689a625e33c590) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '96c84ec4a7db0eb641cb679a7eb7ba74') in 0.007080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaSword2.wav
+  artifactKey: Guid(73b62a73edfa18342812e7c891904e97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Sounds/KoalaSword2.wav using Guid(73b62a73edfa18342812e7c891904e97) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bc1a96cb381b824aa39cbe9c39bdebb5') in 0.007878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaWallsShadow.mat
+  artifactKey: Guid(a9c03afeacb48da40957167e5ef8daea) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaWallsShadow.mat using Guid(a9c03afeacb48da40957167e5ef8daea) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ef5ad8af9b7bf278ae2bd3c434ac62ea') in 0.006573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaFallingPlatformFalling.anim
+  artifactKey: Guid(61d58915556d69b4d8f130c5e8ed1a66) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaFallingPlatformFalling.anim using Guid(61d58915556d69b4d8f130c5e8ed1a66) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '43b5ab4327c3aea5ff2bf41947e52740') in 0.006744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonSwitchOff.anim
+  artifactKey: Guid(998c9b178109824408a6ea24e2d352c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Animations/KoalaDungeonSwitchOff.anim using Guid(998c9b178109824408a6ea24e2d352c6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1ae0ce75738a0bcaddaa017d5cc6b421') in 0.006985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaTeleporterBlueMaterial.mat
+  artifactKey: Guid(4f38b11c7e0bc234cbfecc329c407676) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Koala2D/Materials/KoalaTeleporterBlueMaterial.mat using Guid(4f38b11c7e0bc234cbfecc329c407676) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '11454db57051f45967b0b240ef41d3c1') in 0.008031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.255538 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal3D-grid.png
+  artifactKey: Guid(597e2cb508fd7ec4e8435da2133e4191) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal3D-grid.png using Guid(597e2cb508fd7ec4e8435da2133e4191) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '212b661dbb5326fff2306be0644dc84a') in 0.021864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Editor/Characters/CharacterAbilities/CharacterAbilityInspector.cs
+  artifactKey: Guid(3e6bbb469f0c94a829fc722fd0dbdcb4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Editor/Characters/CharacterAbilities/CharacterAbilityInspector.cs using Guid(3e6bbb469f0c94a829fc722fd0dbdcb4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8eca2865e666aa0fcd3538bbc94352c4') in 0.008536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftConeOfVisionMaterial.mat
+  artifactKey: Guid(731355d935cead846adbe3294d316cb6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftConeOfVisionMaterial.mat using Guid(731355d935cead846adbe3294d316cb6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '832020adb53b7d406ab221199a2f659f') in 0.007796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftBlood.mat
+  artifactKey: Guid(13ae8eb4abfd3014e86386101dfa9b5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftBlood.mat using Guid(13ae8eb4abfd3014e86386101dfa9b5f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6caaf3b177b08802e1a4af2ceba5d7e0') in 0.008142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalPathfinding3D/NavMesh-Navmesh.asset
+  artifactKey: Guid(c9c2e2276cafe7b4b84272a28b6e9511) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalPathfinding3D/NavMesh-Navmesh.asset using Guid(c9c2e2276cafe7b4b84272a28b6e9511) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '897b5f0a6527091d292cb2d329df16ae') in 0.008886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftWind.wav
+  artifactKey: Guid(91088b398af39584c9de8b2ee19fcb9e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftWind.wav using Guid(91088b398af39584c9de8b2ee19fcb9e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5a74e0c4e727b95e1fe374b9c4322886') in 0.009112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterFallDownHoles2D.cs
+  artifactKey: Guid(ed8c17a9a9fed854daff1f08f315ad69) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterFallDownHoles2D.cs using Guid(ed8c17a9a9fed854daff1f08f315ad69) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0832559fd626a698bb9a98541f064b41') in 0.007154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDash2D.cs
+  artifactKey: Guid(cde870ae7090b974bb115e88bfbf8320) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDash2D.cs using Guid(cde870ae7090b974bb115e88bfbf8320) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '62dc7dfea2a9bbe88eb8da1c3df08936') in 0.007284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftTwirl.tga
+  artifactKey: Guid(0358a425b5464974ea95399c4c4d8f93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftTwirl.tga using Guid(0358a425b5464974ea95399c4c4d8f93) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a9646f387c805a6fe2e80e7648654d85') in 0.012118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/Run/FBI@RunBackwardRight.fbx
+  artifactKey: Guid(4d8c2a981ecf7ce4aa85cd739960bd38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/Run/FBI@RunBackwardRight.fbx using Guid(4d8c2a981ecf7ce4aa85cd739960bd38) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b668e493378598829ee34cd59ff8ebf1') in 0.014655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Materials/MinimalGuide.mat
+  artifactKey: Guid(b7dfc3fa81111364ca3265d1d9d6ea88) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Materials/MinimalGuide.mat using Guid(b7dfc3fa81111364ca3265d1d9d6ea88) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5e473202aa149ee4473ec21643fa763a') in 0.008305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGroundMaterial.mat
+  artifactKey: Guid(e04bebbcec2632946bfbae7df61e8449) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGroundMaterial.mat using Guid(e04bebbcec2632946bfbae7df61e8449) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '78e2f4116a4ba2fc6e8ecf09d9dad3f3') in 0.008264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshLinkEditor.cs
+  artifactKey: Guid(ece1e865d1ad84587872fe8580ab5a20) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshLinkEditor.cs using Guid(ece1e865d1ad84587872fe8580ab5a20) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '424085ec241a074ed2d8fbc2a23ef3c0') in 0.007342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Core/TopDownController2D.cs
+  artifactKey: Guid(89ee7fe4b0037274d8dba40f605ae049) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Core/TopDownController2D.cs using Guid(89ee7fe4b0037274d8dba40f605ae049) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b725673f054b16e517126093e203c780') in 0.008287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/Lightmap-0_comp_light.exr
+  artifactKey: Guid(999263c322b651d4bb2ce2b88c83ef2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/Lightmap-0_comp_light.exr using Guid(999263c322b651d4bb2ce2b88c83ef2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c44b1f226c759881e821ae825b97a182') in 0.019371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterHandleWeapon.cs
+  artifactKey: Guid(6a07c6668aa55403790d27b575279549) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterHandleWeapon.cs using Guid(6a07c6668aa55403790d27b575279549) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a06e815eebcf2e0c41fe117965edd79c') in 0.006827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/ScriptsCinemachine/Editor/Environment/RoomEditor.cs
+  artifactKey: Guid(67dcf9d3486c66e4785ed19bc3ecbbf4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/ScriptsCinemachine/Editor/Environment/RoomEditor.cs using Guid(67dcf9d3486c66e4785ed19bc3ecbbf4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8faf6cad5e219ecf1a6457ad4f2dc540') in 0.009751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim.cs
+  artifactKey: Guid(743d8600fb3ffe4489420566cbd9010c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim.cs using Guid(743d8600fb3ffe4489420566cbd9010c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '29a36ff483a9596af8e255844fbe58a3') in 0.006773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs
+  artifactKey: Guid(c0f3bef2a67ae4e139538afec3e59b03) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs using Guid(c0f3bef2a67ae4e139538afec3e59b03) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4d6b4f7086c8fc02cc3c095b9089be98') in 0.007937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftAssaultRifle.ogg
+  artifactKey: Guid(efeea8a63ea57f64183ae9ff6767f678) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftAssaultRifle.ogg using Guid(efeea8a63ea57f64183ae9ff6767f678) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa60896948edf37481b6654e07efea0b') in 0.006373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Animations/LoftFallingPlatformAnimator.controller
+  artifactKey: Guid(2b4b83748e6265b48b7a4ac63aab876e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Animations/LoftFallingPlatformAnimator.controller using Guid(2b4b83748e6265b48b7a4ac63aab876e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f93cd06158cad42d48e8fb0ca434f053') in 0.007228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterJump2D.cs
+  artifactKey: Guid(7c86c96e06d6ae44b822a6ab24e1b8fe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterJump2D.cs using Guid(7c86c96e06d6ae44b822a6ab24e1b8fe) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e530fc24ae1d57a7b36b02a4197bed2') in 0.007228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAutoAim3D.cs
+  artifactKey: Guid(917bba013df402b42b7581f687f6c802) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAutoAim3D.cs using Guid(917bba013df402b42b7581f687f6c802) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e5c5eaab9947b8284e781a9d4b9d7256') in 0.007132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftPotExplosionMaterial.mat
+  artifactKey: Guid(9621739041bf0af418d1db16929a49a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftPotExplosionMaterial.mat using Guid(9621739041bf0af418d1db16929a49a9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd6c7ec209fd115612c6a92b8925232b9') in 0.007143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2ec4a8b9473f047687ee72b77be097a2') in 0.008977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '12b5bea443601eb4e57b921c3894beb6') in 0.010872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+  artifactKey: Guid(1b8d251f9af63b746bf2f7ffe00ebb9b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf using Guid(1b8d251f9af63b746bf2f7ffe00ebb9b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce641430c6dbb40c9077182a10ed523e') in 0.007877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+  artifactKey: Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8785e046c7fc536ba787b2c5fd8034d5') in 0.006850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftBump.wav
+  artifactKey: Guid(b34e4aabd474c45c2945fc9c6eec8381) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftBump.wav using Guid(b34e4aabd474c45c2945fc9c6eec8381) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '72bad2b789d2657819c42d2ba481a26a') in 0.006719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftMechanism.wav
+  artifactKey: Guid(32f2f6ba932705d4dbd1b1fc7348a49e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftMechanism.wav using Guid(32f2f6ba932705d4dbd1b1fc7348a49e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '40fea63c5de6accabd1de4ae2053069c') in 0.005763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshModifierEditor.cs
+  artifactKey: Guid(6fa04b4743e3947eba4d7b9e5832ea69) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshModifierEditor.cs using Guid(6fa04b4743e3947eba4d7b9e5832ea69) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4f2676a949b739f5182ea523d9c1f389') in 0.006639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c7559ae4a29f4c6aaca5b20544a02b3') in 0.006324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftReticleMaterial.mat
+  artifactKey: Guid(fcc7fe9cfc1f5754396fb341b6a5e797) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftReticleMaterial.mat using Guid(fcc7fe9cfc1f5754396fb341b6a5e797) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2bfcf362db082f565c8b0eed695135dd') in 0.007855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs
+  artifactKey: Guid(1c32167dbf3314852b6006a288eb449b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs using Guid(1c32167dbf3314852b6006a288eb449b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'db7f3e3f98d7a917a7749c7b5f74b5a5') in 0.006786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDisableIKOnReload.cs
+  artifactKey: Guid(7393df85b7760f5448b5f81a8d6905de) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDisableIKOnReload.cs using Guid(7393df85b7760f5448b5f81a8d6905de) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '640c236ea70b5ae5ff9cb0e9cab1b976') in 0.008662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterButtonActivation.cs
+  artifactKey: Guid(a87ffdd7d8febb24b817b1d3d350bef7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterButtonActivation.cs using Guid(a87ffdd7d8febb24b817b1d3d350bef7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '27e94d4e37724c2b37bd423bc8c4f793') in 0.006584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterOrientation3D.cs
+  artifactKey: Guid(1f2dd01ffdd1cc045a614bd354672723) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterOrientation3D.cs using Guid(1f2dd01ffdd1cc045a614bd354672723) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '32a2f1ac120d44124246725bf46598e9') in 0.007672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftTinySelect.wav
+  artifactKey: Guid(4050069eb532049289606df729d674bd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftTinySelect.wav using Guid(4050069eb532049289606df729d674bd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2dd03b92a170a672780e782074ce445f') in 0.006753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftTape.wav
+  artifactKey: Guid(bbefda97fc1ed234686fff2f8dedf1cf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftTape.wav using Guid(bbefda97fc1ed234686fff2f8dedf1cf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1b9296e86ba6361b4db21943a655ee14') in 0.006313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGateMaterial.mat
+  artifactKey: Guid(441fd09bf5072fb4eacedbc606c5ad46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGateMaterial.mat using Guid(441fd09bf5072fb4eacedbc606c5ad46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9cca33f77016791dd14b82801086d68a') in 0.006169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftWallMaterialGreen.mat
+  artifactKey: Guid(1f3996a341686294b8a0136249c52202) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftWallMaterialGreen.mat using Guid(1f3996a341686294b8a0136249c52202) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6173297f1ccf100e3f693e233d989de3') in 0.008469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftIceMaterial.mat
+  artifactKey: Guid(101013e661120304980ba2202f2cd1dd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftIceMaterial.mat using Guid(101013e661120304980ba2202f2cd1dd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e6f4293c159f6e375d71bbdcc2795055') in 0.008408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftHit3.ogg
+  artifactKey: Guid(497123663b0cc014c96d9984ce147c73) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftHit3.ogg using Guid(497123663b0cc014c96d9984ce147c73) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd32982207e7e2dc9d8d98663fa87419c') in 0.006540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterAbility.cs
+  artifactKey: Guid(92a75f2e85a55b44a9f80a248f7545b7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterAbility.cs using Guid(92a75f2e85a55b44a9f80a248f7545b7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f8f575a86cfdd3a2e432d522fffec452') in 0.007503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSwoosh.wav
+  artifactKey: Guid(d383337d581f02845a7774fb266bcffd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSwoosh.wav using Guid(d383337d581f02845a7774fb266bcffd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd84d4e3dc705278881ecd219347ce35e') in 0.006986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal3D-sword.png
+  artifactKey: Guid(236d39d3ce1743d4da1a47bd304522aa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/LevelSelection/Sprites/level-map-minimal3D-sword.png using Guid(236d39d3ce1743d4da1a47bd304522aa) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90e5aa467fd295c6c5acc72daa4847b7') in 0.011021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterJump3D.cs
+  artifactKey: Guid(c752f2958a762a144a00333487ac892f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterJump3D.cs using Guid(c752f2958a762a144a00333487ac892f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fc8a8b7fa572bcb5fe21f20b50586093') in 0.006371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Animations/CharacterAnimationFeedbacks.cs
+  artifactKey: Guid(e3a4abfbe21c5fd4db094e4db05423f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Animations/CharacterAnimationFeedbacks.cs using Guid(e3a4abfbe21c5fd4db094e4db05423f5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afd928f4042751b29768e14b2ff755d4') in 0.006567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftTeleporterYellow.mat
+  artifactKey: Guid(658217561c50b9c4890e7be3616c4d2a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftTeleporterYellow.mat using Guid(658217561c50b9c4890e7be3616c4d2a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f05ffa641ea31bb58c06b937fd4ab596') in 0.008400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftDust1.png
+  artifactKey: Guid(04377d34976364a438cad53ecddba173) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftDust1.png using Guid(04377d34976364a438cad53ecddba173) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '36b7a3eac1c7e0498ed5c53e08a0e9bd') in 0.012636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterCrouch.cs
+  artifactKey: Guid(80a52f88e226e0c459085cd4e4a38a7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterCrouch.cs using Guid(80a52f88e226e0c459085cd4e4a38a7b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '80e92bb454f6ac6c9b43077dcaf781c1') in 0.007080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftCollectionExplosionMaterial.mat
+  artifactKey: Guid(335df889d88644d4eb6e3ef8c15ff72d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftCollectionExplosionMaterial.mat using Guid(335df889d88644d4eb6e3ef8c15ff72d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4112ede9bee6fb40f98701e7465897f0') in 0.006998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftSmoke.tga
+  artifactKey: Guid(d97ec25ad6eb82242bd9451e92c8ba45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Textures/LoftSmoke.tga using Guid(d97ec25ad6eb82242bd9451e92c8ba45) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '73d78ef6d1f245d1e43a1d23bee4fb40') in 0.009728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Materials/Minimal3DGlassesMaterial.mat
+  artifactKey: Guid(54a1638915d40f4429c5323171ac1a95) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Materials/Minimal3DGlassesMaterial.mat using Guid(54a1638915d40f4429c5323171ac1a95) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ac938048fdc73cdc700125e794905aa') in 0.008438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash3D.cs
+  artifactKey: Guid(1ecb2d62d347e584d8df20d3cf923c2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash3D.cs using Guid(1ecb2d62d347e584d8df20d3cf923c2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '779bdd37b27ecb443758f567036cc72f') in 0.006670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Scripts/NavMeshComponents.asmdef
+  artifactKey: Guid(8c4dd21966739024fbd72155091d199e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Scripts/NavMeshComponents.asmdef using Guid(8c4dd21966739024fbd72155091d199e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ba0a7d42ffb5ffca7e7897408297da7c') in 0.011405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/Run/FBI@RunForward.fbx
+  artifactKey: Guid(77573758953579f41814389478000149) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Colonel/Animations/Run/FBI@RunForward.fbx using Guid(77573758953579f41814389478000149) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '194a792c0b3cb4b80a252f0586434099') in 0.015506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftGlassyTap.wav
+  artifactKey: Guid(2e66f0795156e42f1bb55316f73f568e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftGlassyTap.wav using Guid(2e66f0795156e42f1bb55316f73f568e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '32e601951394555f2c008bac08413b95') in 0.007620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/MeleeWeapon.cs
+  artifactKey: Guid(a557e2b93323f4831a62221b200348c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/MeleeWeapon.cs using Guid(a557e2b93323f4831a62221b200348c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95e30d9fd108289eb92e98a2e6a7324f') in 0.007623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim2D.cs
+  artifactKey: Guid(ba85f5b87cb8cf84f9e09dcca90cd372) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim2D.cs using Guid(ba85f5b87cb8cf84f9e09dcca90cd372) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5840e91c4b1d8f26731e56c651abad9d') in 0.007229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftTeleporterOrange.mat
+  artifactKey: Guid(0e0015bbc14f39f46b331e5daaa1ec98) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftTeleporterOrange.mat using Guid(0e0015bbc14f39f46b331e5daaa1ec98) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '53109e16f73232c5894161dd95f878f6') in 0.008429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Scripts/NavMeshLink.cs
+  artifactKey: Guid(6eeb5dc026fdf4b488bc7ae0138ab719) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/ThirdParty/NavMeshComponents/Scripts/NavMeshLink.cs using Guid(6eeb5dc026fdf4b488bc7ae0138ab719) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e139abaca3a5bcf8b1af6d05383466f1') in 0.007820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftAIDeath.ogg
+  artifactKey: Guid(975de4270f79d5946957a8aa6dddccc0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftAIDeath.ogg using Guid(975de4270f79d5946957a8aa6dddccc0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6f1249306901e2dec6e6f74953834159') in 0.008772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftImpact.ogg
+  artifactKey: Guid(e33af03991afbb342a74061c8286b9ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftImpact.ogg using Guid(e33af03991afbb342a74061c8286b9ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35a3484a17e68adc531d5631a4a3fe59') in 0.007723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sprites/LoftReticle.png
+  artifactKey: Guid(689af5c536e301143843dfe9a62c133d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sprites/LoftReticle.png using Guid(689af5c536e301143843dfe9a62c133d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d36c8f7d4430198b2ba62d3fa3a5cd4') in 0.013332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.fbx
+  artifactKey: Guid(5de4a37320be3e348aebe2c58a1fbd8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.fbx using Guid(5de4a37320be3e348aebe2c58a1fbd8d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9098d044e34ffcb36448fd06bd46d2a8') in 0.014870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/HitscanWeapon.cs
+  artifactKey: Guid(cdf6147897725a548ae8c694c8ecb82c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/HitscanWeapon.cs using Guid(cdf6147897725a548ae8c694c8ecb82c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '85a874b59db327be813a83f1015c94f9') in 0.007917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSand.wav
+  artifactKey: Guid(5b37c17d391254937b921e5debf7dde3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSand.wav using Guid(5b37c17d391254937b921e5debf7dde3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbe89c40a7fae287a03b973dfc36a31a') in 0.007322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftExplosion.wav
+  artifactKey: Guid(f6580294a0cfc5f47a743ac2553f8f67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftExplosion.wav using Guid(f6580294a0cfc5f47a743ac2553f8f67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ddf5ed11ca91d9cb00b75d9f1ec1c80a') in 0.006432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterPathfinder3D.cs
+  artifactKey: Guid(443ebf149b5f47147a1076bea95f5134) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterPathfinder3D.cs using Guid(443ebf149b5f47147a1076bea95f5134) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fbc0c71d3a2c4b37dddb9ae77ef5713d') in 0.008984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponLaserSight.cs
+  artifactKey: Guid(03aaf62627f364a7d92d307729fe738d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponLaserSight.cs using Guid(03aaf62627f364a7d92d307729fe738d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fca7fa8b3b341b8d18325d3a26af3473') in 0.010447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGroundMaterialAlt.mat
+  artifactKey: Guid(e2af7c24f48b7054fb63eda487d5b306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Materials/LoftGroundMaterialAlt.mat using Guid(e2af7c24f48b7054fb63eda487d5b306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '610fac4e95409c893e23784279fdae5a') in 0.008212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftHit1.ogg
+  artifactKey: Guid(ccec37d734aad9b49a1a39a8a7262bbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftHit1.ogg using Guid(ccec37d734aad9b49a1a39a8a7262bbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f985ec976232d81cae36addb3e50de8e') in 0.007864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSlowdown.wav
+  artifactKey: Guid(450cba5cc48c9474d8d8d9b6b0af47d1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Loft3D/Sounds/LoftSlowdown.wav using Guid(450cba5cc48c9474d8d8d9b6b0af47d1) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57d09cc6b53e2d44ab563a5bcb74cec3') in 0.007013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDash3D.cs
+  artifactKey: Guid(893d1a748dcc4a247b555ae136c3d0df) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDash3D.cs using Guid(893d1a748dcc4a247b555ae136c3d0df) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2bc7f54afb34029b540e2a24f21ecc74') in 0.006476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalScene3D/Lightmap-0_comp_light.exr
+  artifactKey: Guid(f6db30b991a455b45a91b58edfd91284) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Demos/Minimal3D/MinimalScene3D/Lightmap-0_comp_light.exr using Guid(f6db30b991a455b45a91b58edfd91284) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '676efd430dc9ff4bc072c1396017b450') in 0.018476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash2D.cs
+  artifactKey: Guid(b2620d37890657743b0e0a1bfa4eea34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash2D.cs using Guid(b2620d37890657743b0e0a1bfa4eea34) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7777b53581b1ace0b9a7c2cdd0f2b1ce') in 0.009550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponModel.cs
+  artifactKey: Guid(022d785ef9196354e906194101045fc5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponModel.cs using Guid(022d785ef9196354e906194101045fc5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c11a7a98d7c21f582f956c095b51b5d2') in 0.007122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterGridMovement.cs
+  artifactKey: Guid(ff62ccf14df8cde499c8895a73ca8374) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/_3rdParty/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterGridMovement.cs using Guid(ff62ccf14df8cde499c8895a73ca8374) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '879c7d685ade04eb81375ab198ee60bc') in 0.006828 seconds 
