@@ -21,7 +21,7 @@ public class PickUpHandler : MonoBehaviour
             PickUpController p = collision.transform.GetComponentInParent<PickUpController>();
             if(p.fading)
             {
-                p.fading = false;
+                p.GetPickedUp();
                 StartCoroutine(MovePickUpToPlayer(p));
             }            
         }

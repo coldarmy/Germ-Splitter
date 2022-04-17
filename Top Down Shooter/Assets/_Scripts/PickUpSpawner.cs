@@ -33,15 +33,15 @@ public class PickUpSpawner : MonoBehaviour
 
     private void HandleEnemyDeath(Vector3 pos)
     {
-        
+        Vector3 newPos = pos;
         int numEnergy = UnityEngine.Random.Range(energyLow, energyHigh + 1);
         for(int i = 0; i < numEnergy; i++)
         {
             xOffset = UnityEngine.Random.Range(-2, 2f);
             zOffset = UnityEngine.Random.Range(-2, 2f);
-            pos += Vector3.right * xOffset;
-            pos += Vector3.forward * zOffset;
-            SpawnPickUp(PickUpController.pickupType.energy, pos);
+            newPos += Vector3.right * xOffset;
+            newPos += Vector3.forward * zOffset;
+            SpawnPickUp(PickUpController.pickupType.energy, newPos, pos);
         }
 
 
@@ -50,29 +50,29 @@ public class PickUpSpawner : MonoBehaviour
         {
             xOffset = UnityEngine.Random.Range(-2, 2f);
             zOffset = UnityEngine.Random.Range(-2, 2f);
-            pos += Vector3.right * xOffset;
-            pos += Vector3.forward * zOffset;
+            newPos += Vector3.right * xOffset;
+            newPos += Vector3.forward * zOffset;
 
             if(PlayerController.instance.AtFullHealth())
             {
-                SpawnPickUp(PickUpController.pickupType.energy, pos);
+                SpawnPickUp(PickUpController.pickupType.energy, newPos, pos);
             }
             else
             {
-                SpawnPickUp(PickUpController.pickupType.health, pos);
+                SpawnPickUp(PickUpController.pickupType.health, newPos, pos);
             }            
         }
     }
 
-    private void SpawnPickUp(PickUpController.pickupType t, Vector3 pos)
+    private void SpawnPickUp(PickUpController.pickupType t, Vector3 newPos, Vector3 deathPos)
     {
         for(int i = 0; i < _pickups.Count; i++)
         {
             if(_pickups[i]._type == t && !_pickups[i].gameObject.activeInHierarchy)
             {
-                _pickups[i].transform.position = pos;
-                _pickups[i].gameObject.SetActive(true);
-                
+                _pickups[i].transform.position = deathPos;
+                _pickups[i].SetSpawnDestination(newPos);
+                _pickups[i].gameObject.SetActive(true);                
                 return;
             }
         }
