@@ -56,6 +56,11 @@ public class EnemyHP : MonoBehaviour
         myHP = newHP;
     }
 
+    public void TakeSuicideDamage()
+    {
+        TakeDamage(startingHP);
+    }
+
    
 
 }

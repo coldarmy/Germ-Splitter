@@ -1614,7 +1614,7 @@ PrefabInstance:
     - target: {fileID: 5881709506426740385, guid: e062af0ad55eb7247b96105fe42d0742,
         type: 3}
       propertyPath: hpChance
-      value: 0.1
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e062af0ad55eb7247b96105fe42d0742, type: 3}
@@ -1960,7 +1960,7 @@ PrefabInstance:
     - target: {fileID: 6750454010233471467, guid: f8160c39dee399740a18f0e98bcfe389,
         type: 3}
       propertyPath: wavesPerDifficulty
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7443113169111130648, guid: f8160c39dee399740a18f0e98bcfe389,
         type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] private float idleTime, wanderTime, attackWindUpTime, attackRate, attackCoolDown;
+    [SerializeField] private float idleTime, wanderTime, attackWindUpTime, attackRate, attackCoolDown, pathfindDistance;
     [SerializeField] private float wanderDistance, aggroRange, aggroLeashRange, attackRange;
     [SerializeField] private float wanderSpeed, chaseSpeed;
     [SerializeField] private int numAttacks;
@@ -17,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
     private float count;
     private int curAttacks;
     private Vector3 target;
+    private List<Vector3> possibleDirections;
     private EnemyMaterialController matController;
     [SerializeField] private enum EnemyState
     {
@@ -40,6 +41,7 @@ public class EnemyMovement : MonoBehaviour
         {
             matController = GetComponent<EnemyMaterialController>();
         }
+        possibleDirections = new List<Vector3>();
     }
     private void Start()
     {
@@ -175,12 +177,13 @@ public class EnemyMovement : MonoBehaviour
 
     private void GoToWander()
     {
-        float ranX = Random.Range(-wanderDistance, wanderDistance);
-        float ranZ = Random.Range(-wanderDistance, wanderDistance);
-        target = transform.position;
-        target.x += ranX;
-        target.z += ranZ;
-        Debug.DrawLine(transform.position, target, Color.red, 5f);
+        /* float ranX = Random.Range(-wanderDistance, wanderDistance);
+         float ranZ = Random.Range(-wanderDistance, wanderDistance);
+         target = transform.position;
+         target.x += ranX;
+         target.z += ranZ;
+         Debug.DrawLine(transform.position, target, Color.red, 5f);*/
+        target = RandomPathfind(5);
         count = 0;
         state = EnemyState.Wander;
     }
@@ -328,4 +331,45 @@ public class EnemyMovement : MonoBehaviour
         }
         
     }
+
+    private void GetAllPossibleDirections()
+    {
+        possibleDirections.Clear();
+        for (int i = 0; i < 16; i++)
+        {
+            float angleOfRayCast = i * 360 / 16;
+            Vector3 dir = new Vector3(Mathf.Cos(angleOfRayCast * Mathf.Deg2Rad), 0, Mathf.Sin(angleOfRayCast * Mathf.Deg2Rad));
+            Ray r = new Ray(transform.position, dir);
+            //layermask mask - layermask.getmask("walls");
+            if (!Physics.Raycast(r, out RaycastHit inf, pathfindDistance))
+            {
+
+                Debug.DrawLine(transform.position, transform.position + dir * pathfindDistance, Color.green, 1f);
+                possibleDirections.Add(dir * pathfindDistance);
+            }
+            else
+            {
+                Debug.Log(inf.transform.tag);
+                if (inf.distance >= pathfindDistance * .5f)
+                {
+                    Debug.DrawLine(transform.position, inf.point, Color.red, 1f);
+                    possibleDirections.Add(dir * inf.distance * Random.Range(.5f, .75f));
+                }
+            }
+        }
+    }
+
+    private Vector3 RandomPathfind(int random)
+    {
+        GetAllPossibleDirections();
+        possibleDirections.Sort((Vector3 a, Vector3 b) =>
+        {
+            if (a == b) return 0;
+            return (int)(b.magnitude * 100f - a.magnitude * 100f);
+        });
+        Vector3 dir = possibleDirections[Random.Range(0, Mathf.Min(possibleDirections.Count, random))];
+        //Debug.DrawLine(transform.position, transform.position + dir, Color.yellow, 1f);
+        return transform.position + dir;
+    }
+
 }

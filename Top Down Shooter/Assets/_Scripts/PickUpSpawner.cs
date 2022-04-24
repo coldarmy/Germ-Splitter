@@ -46,7 +46,7 @@ public class PickUpSpawner : MonoBehaviour
 
 
         float h = UnityEngine.Random.Range(0, 1f);
-        if(h >= hpChance)
+        if(h <= hpChance)
         {
             xOffset = UnityEngine.Random.Range(-2, 2f);
             zOffset = UnityEngine.Random.Range(-2, 2f);

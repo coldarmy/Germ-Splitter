@@ -18,8 +18,8 @@ MonoBehaviour:
   FireForce: 5000
   hitKB: 10
   lifeTime: 0.5
-  moveSpeed: 45
-  energyCost: 25
+  moveSpeed: 30
+  energyCost: 35
   bulletObject: {fileID: 2836085010465616092, guid: 8bafd57e4264ec043b5b9a394735c88a,
     type: 3}
   damage: 10
