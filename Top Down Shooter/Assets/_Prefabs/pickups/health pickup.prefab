@@ -145,6 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 1
   numPickups: 5
-  fading: 0
   energyAmt: 0
-  lifetime: 7
+  lifetime: 5
+  fading: 0

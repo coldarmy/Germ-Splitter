@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 2
   numPickups: 50
-  fading: 0
   energyAmt: 10
-  lifetime: 5
+  lifetime: 4
+  fading: 0
 --- !u!1 &4895016444079974605
 GameObject:
   m_ObjectHideFlags: 0

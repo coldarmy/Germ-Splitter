@@ -2752,3 +2752,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 369.254093 seconds.
+  path: Assets/_Prefabs/pickups/energy pickup.prefab
+  artifactKey: Guid(11b478c8650d6bb47ae593319f4d7b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/pickups/energy pickup.prefab using Guid(11b478c8650d6bb47ae593319f4d7b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c23fc183c4022da668f4317e679add9') in 0.070489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.300531 seconds.
+  path: Assets/_Prefabs/pickups/health pickup.prefab
+  artifactKey: Guid(0da2291928f6c8744ade939400f85b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/pickups/health pickup.prefab using Guid(0da2291928f6c8744ade939400f85b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0bf03402bb3ca74f4bb06555ecc143') in 0.008054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.243255 seconds.
+  path: Assets/_Prefabs/pickups/health pickup.prefab
+  artifactKey: Guid(0da2291928f6c8744ade939400f85b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Prefabs/pickups/health pickup.prefab using Guid(0da2291928f6c8744ade939400f85b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92e92e810d7522032e793c503ac829a') in 0.008083 seconds 
+========================================================================
+Received Prepare
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 2.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (1.3 MB). Loaded Objects now: 3941.
+Memory consumption went from 210.4 MB to 209.1 MB.
+Total: 3.326400 ms (FindLiveObjects: 0.275100 ms CreateObjectMapping: 0.145400 ms MarkObjects: 2.725800 ms  DeleteObjects: 0.179300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
