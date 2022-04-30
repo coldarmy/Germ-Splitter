@@ -5,16 +5,19 @@ using UnityEngine;
 
 public class MutaMovement : MonoBehaviour
 {
+    public bool dashing;
     [SerializeField] private ControlType controlState;
-    [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate;
-    private float distanceToCam, curMoveSpeed;
+    [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate, dashSpeed, dashTime;
+    private float distanceToCam,  dashCounter;
+    [SerializeField] private float curMoveSpeed;
     private bool moving;
     private Camera cam;
-    [SerializeField]private Vector3 moveDir;
+    private Vector3 moveDir;
     private GunController myGun;
     private Rigidbody _rb;
     private Quaternion oldLookRot;
     private Vector3 mousePos, mouseTarget, shootDir;
+
     [SerializeField] private enum ControlType
     {
         Mouse,
@@ -73,23 +76,44 @@ public class MutaMovement : MonoBehaviour
 
     private void HandleMouseMovement()
     {
-        LookAtMouse();
-        if (Input.GetMouseButton(0) && myGun.CanShoot())
+        if(dashing)
         {
-            shootDir = (mouseTarget - transform.position).normalized;
-            myGun.ShootGun(shootDir);
+            dashCounter += Time.fixedDeltaTime;
+            if(dashCounter >= dashTime)
+            {
+                Debug.Log("dashing stops");
+                dashing = false;
+            }
         }
-        if (Input.GetMouseButton(1) && myGun.CanShoot())
+        else
         {
-            Debug.Log("trying to shoot rocket");
-            myGun.ShootSpecial(moveDir);
+           // Debug.Log("not dashing");
+            LookAtMouse();
+            ChangeAcceleration(!moving);
+            if (Input.GetMouseButton(0) && myGun.CanShoot())
+            {
+                shootDir = (mouseTarget - transform.position).normalized;
+                myGun.ShootGun(shootDir);
+            }
+            if (Input.GetMouseButton(1) && myGun.CanShoot())
+            {
+                Debug.Log("trying to shoot rocket");
+                myGun.ShootSpecial(moveDir);
+            }
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                moving = !moving;
+            }
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetMouseButton(2))
+            {
+                // Debug.Log("shift test");
+                StartDash();
+            }
+            
+            
         }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            moving = !moving;
-        }
-        ChangeAcceleration(!moving);
         MoveForward();
+
     }
    
 
@@ -133,5 +157,14 @@ public class MutaMovement : MonoBehaviour
         Vector3 pos = cam.ScreenToWorldPoint(mousePosition);
         pos.y = transform.position.y;
         return pos;
+    }
+
+    public void StartDash()
+    {
+        Debug.Log("dashing");
+        dashing = true;
+        curMoveSpeed = dashSpeed;
+        dashCounter = 0;
+       // Debug.Break();
     }
 }
