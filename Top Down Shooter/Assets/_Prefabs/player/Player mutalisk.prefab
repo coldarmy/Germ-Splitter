@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1535779122480506448}
   - component: {fileID: 1468748851482283087}
   - component: {fileID: 1931648774077091306}
+  - component: {fileID: 6063801246489078098}
   m_Layer: 0
   m_Name: Player mutalisk
   m_TagString: Player
@@ -118,14 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b5373a54c77ac94f8038e1afb0bdbf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashing: 0
   controlState: 0
   maxMoveSpeed: 15
   rotSpeed: 100
   accelRate: 15
   decelRate: 100
-  dashSpeed: 50
-  dashTime: 0.25
   curMoveSpeed: 0
 --- !u!114 &2337780731634523924
 MonoBehaviour:
@@ -301,6 +299,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curEnergy: 0
   maxEnergy: 100
+--- !u!114 &6063801246489078098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337780731634523886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cede1377d50ca74e86454d12b241153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 50
+  dashTime: 0.25
+  dashEnergy: 10
+  dashing: 0
 --- !u!1 &2572340870607059928
 GameObject:
   m_ObjectHideFlags: 0

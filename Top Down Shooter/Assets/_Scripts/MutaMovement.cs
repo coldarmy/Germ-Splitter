@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class MutaMovement : MonoBehaviour
 {
-    public bool dashing;
     [SerializeField] private ControlType controlState;
-    [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate, dashSpeed, dashTime;
-    private float distanceToCam,  dashCounter;
+    [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate;
+    private float distanceToCam;
     [SerializeField] private float curMoveSpeed;
     private bool moving;
     private Camera cam;
@@ -17,6 +16,7 @@ public class MutaMovement : MonoBehaviour
     private Rigidbody _rb;
     private Quaternion oldLookRot;
     private Vector3 mousePos, mouseTarget, shootDir;
+    private PlayerDashController _dashController;
 
     [SerializeField] private enum ControlType
     {
@@ -26,6 +26,7 @@ public class MutaMovement : MonoBehaviour
 
     private void OnEnable()
     {
+        _dashController = GetComponent<PlayerDashController>();
         _rb = GetComponent<Rigidbody>();
         myGun = GetComponent<GunController>();
         cam = Camera.main;
@@ -36,21 +37,6 @@ public class MutaMovement : MonoBehaviour
             moving = true;
         }
     }
-
-    
-
-   /* private void Update()
-    {        
-        switch(controlState)
-        {
-            case ControlType.Controller:
-                HandleControllerMovement();
-                break;
-            case ControlType.Mouse:
-                HandleMouseMovement();
-                    break;
-        }        
-    }*/
 
     private void FixedUpdate()
     {
@@ -63,10 +49,7 @@ public class MutaMovement : MonoBehaviour
                 HandleMouseMovement();
                 break;
         }
-
-        // HandleMouseMovement();
     }
-
 
 
     private void HandleControllerMovement()
@@ -76,18 +59,8 @@ public class MutaMovement : MonoBehaviour
 
     private void HandleMouseMovement()
     {
-        if(dashing)
+        if(!_dashController.dashing)
         {
-            dashCounter += Time.fixedDeltaTime;
-            if(dashCounter >= dashTime)
-            {
-                Debug.Log("dashing stops");
-                dashing = false;
-            }
-        }
-        else
-        {
-           // Debug.Log("not dashing");
             LookAtMouse();
             ChangeAcceleration(!moving);
             if (Input.GetMouseButton(0) && myGun.CanShoot())
@@ -106,12 +79,13 @@ public class MutaMovement : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetMouseButton(2))
             {
-                // Debug.Log("shift test");
-                StartDash();
+                if(_dashController.CanDash())
+                {
+                    StartDash();
+                }
+                
             }
-            
-            
-        }
+        }        
         MoveForward();
 
     }
@@ -128,8 +102,7 @@ public class MutaMovement : MonoBehaviour
             curMoveSpeed += accelRate * Time.deltaTime;
         }
         curMoveSpeed = Mathf.Clamp(curMoveSpeed, 0, maxMoveSpeed);
-    }
-    
+    }    
 
     private void MoveForward()
     {
@@ -162,9 +135,7 @@ public class MutaMovement : MonoBehaviour
     public void StartDash()
     {
         Debug.Log("dashing");
-        dashing = true;
-        curMoveSpeed = dashSpeed;
-        dashCounter = 0;
-       // Debug.Break();
+        _dashController.StartDash();
+        curMoveSpeed = _dashController.dashSpeed;
     }
 }
