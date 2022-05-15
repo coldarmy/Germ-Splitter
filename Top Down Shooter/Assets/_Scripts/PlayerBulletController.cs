@@ -8,9 +8,12 @@ public class PlayerBulletController : BulletController
     public static BulletEvent SpawnExplosion;
     //private BulletController myBulletController;
     [SerializeField] ExplosionController explosion;
+    private GlaiveSpawner glaiveSpawner;
+    
 
     private void OnEnable()
     {
+        glaiveSpawner = GetComponent<GlaiveSpawner>();
         base.OnEnable();
     }
     // Start is called before the first frame update
@@ -21,8 +24,12 @@ public class PlayerBulletController : BulletController
             // Debug.Log("hit enemy");
             // collision.gameObject.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletController.myBulletData.damage);
             collision.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletData.damage);
+            
             Debug.Log("touching enemy");
-
+            if (glaiveSpawner != null)
+            {
+                glaiveSpawner.SpawnGlaive(collision.transform);
+            }
             TurnOffBullet();
         }
     }
@@ -34,6 +41,7 @@ public class PlayerBulletController : BulletController
             // SpawnExplosion?.Invoke(explosion);
             ObjectPoolManager.instance.SpawnExplosion(transform.position);
         }
+       
         base.TurnOffBullet();
     }
 }
