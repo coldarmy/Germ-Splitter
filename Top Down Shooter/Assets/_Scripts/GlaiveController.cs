@@ -1,3 +1,4 @@
+using Lean.Pool;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class GlaiveController : MonoBehaviour
     [SerializeField] private float range, moveSpeed;
     [SerializeField] private int startingBounces;
     [SerializeField] private int[] damages;
+    [SerializeField] private GameObject particles;
     private int curBounce;
     private Transform target;
     private List<Transform> previousTargets, possibleTargets;
@@ -27,7 +29,9 @@ public class GlaiveController : MonoBehaviour
         {
             possibleTargets = new List<Transform>();
         }
-        
+
+        GameObject exp = LeanPool.Spawn(particles);
+        exp.transform.position = this.transform.position;
         previousTargets.Add(firstHitObject);
         curBounce = 0;
         target = FindTarget();
@@ -40,7 +44,7 @@ public class GlaiveController : MonoBehaviour
         {
             Vector3 dir = (target.position - transform.position).normalized;
             transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
-            Debug.Break();
+            
         }
     }
 
@@ -56,6 +60,9 @@ public class GlaiveController : MonoBehaviour
 
     private void AttackTarget()
     {
+        GameObject exp = LeanPool.Spawn(particles);
+        exp.transform.position = this.transform.position;
+        
         target.GetComponent<EnemyHP>().TakeDamage(damages[curBounce]);
         //also spawn explosion effect?
         curBounce++;
@@ -118,7 +125,7 @@ public class GlaiveController : MonoBehaviour
         }
         return targets[closest];
     }
-
+    
     private void GoToNextTarget(Transform curTarget)
     {
         previousTargets.Add(curTarget);

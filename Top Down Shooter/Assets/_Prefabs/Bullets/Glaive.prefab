@@ -46,9 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5
-  moveSpeed: 25
+  moveSpeed: 20
   startingBounces: 2
   damages: 0400000002000000
+  particles: {fileID: 2335518039385978797, guid: 64f6ded911018524cbcceae01c43c511,
+    type: 3}
 --- !u!1 &5829578982977854126
 GameObject:
   m_ObjectHideFlags: 0
