@@ -10,7 +10,7 @@ public class GunController : MonoBehaviour
     public MMFeedbacks ShootFeedback;
     [SerializeField] private Rigidbody rb;
     private float bulletOffset = .65f;
-    private float shootCD, playerKB; // get these values from the bullet
+    private float shootCD; // get these values from the bullet
     private float cooldown;
     private LineRenderer lr;
     private PlayerEnergyController EnergyController;
@@ -18,7 +18,7 @@ public class GunController : MonoBehaviour
     private void OnEnable()
     {;
         lr = GetComponent<LineRenderer>();
-        AssignBulletValues(standardBullet.cooldown, standardBullet.playerKB);
+        AssignBulletValues(standardBullet.cooldown);
         cooldown = 0;
 
     }
@@ -28,11 +28,10 @@ public class GunController : MonoBehaviour
         EnergyController = PlayerController.instance.GetComponent<PlayerEnergyController>();
     }
 
-    private void AssignBulletValues(float cd, float kickBack)
+    private void AssignBulletValues(float cd)
     {
         shootCD = cd;
-        playerKB = kickBack;
-        
+         
     }
 
     private void Update()

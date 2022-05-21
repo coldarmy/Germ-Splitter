@@ -7,7 +7,7 @@ using UnityEngine;
 public class BulletData : ScriptableObject
 {
     [SerializeField] private string name;
-    public float cooldown, playerKB, FireForce, hitKB, lifeTime, moveSpeed, energyCost;
+    public float cooldown, hitKB, lifeTime, moveSpeed, energyCost;
     public GameObject bulletObject;
     public int damage, poolSize;
 }
