@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Rocket Bullet
   cooldown: 0.5
-  playerKB: 500
-  FireForce: 5000
   hitKB: 10
   lifeTime: 0.5
   moveSpeed: 30
-  energyCost: 50
+  energyCost: 0
   bulletObject: {fileID: 2836085010465616092, guid: 8bafd57e4264ec043b5b9a394735c88a,
     type: 3}
   damage: 10

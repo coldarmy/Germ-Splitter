@@ -186,7 +186,7 @@ MonoBehaviour:
   prefab: {fileID: 2335518039385978797, guid: 64f6ded911018524cbcceae01c43c511, type: 3}
   notification: 3
   strategy: 0
-  preload: 3
+  preload: 6
   capacity: 0
   recycle: 1
   persist: 0
@@ -1531,6 +1531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player mutalisk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2337780731634523924, guid: 8a0ae97d450e05045acdbe7a8056ca57,
+        type: 3}
+      propertyPath: invulnerableDebug
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2337780731634523925, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
