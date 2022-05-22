@@ -47,7 +47,7 @@ public class ExplosionController : MonoBehaviour
             if (rb != null)
                 rb.AddExplosionForce(explosioinForce, transform.position, radius);
         }
-        transform.DOScale(finalScale, lifeTime).OnComplete(() =>
+        transform.DOScale(finalScale, lifeTime).SetEase(Ease.OutQuad).OnComplete(() =>
         {
            gameObject.SetActive(false);
         });

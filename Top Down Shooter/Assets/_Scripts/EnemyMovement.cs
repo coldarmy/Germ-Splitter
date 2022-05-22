@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    public bool stunned;
     [SerializeField] private float idleTime, wanderTime, attackWindUpTime, attackRate, attackCoolDown, pathfindDistance;
     [SerializeField] private float wanderDistance, aggroRange, aggroLeashRange, attackRange;
     [SerializeField] private float wanderSpeed, chaseSpeed;
@@ -14,7 +15,7 @@ public class EnemyMovement : MonoBehaviour
     private bool onAttackCoolDown;
     private Transform player;
     private Rigidbody rb;
-    private float count;
+    private float count, stunCount, stunTime;
     private int curAttacks;
     private Vector3 target;
     private List<Vector3> possibleDirections;
@@ -52,6 +53,19 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
+        if (stunned)
+        {
+            stunCount += Time.deltaTime;
+            if (stunCount >= stunTime)
+            {
+                stunned = false;
+            }
+            else
+            {
+                return;
+            }
+
+        }
         count += Time.deltaTime;
         switch(state)
         {
@@ -86,6 +100,10 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(stunned)
+        {
+            return;
+        }
         switch(state)
         {
             case EnemyState.Wander:
@@ -370,6 +388,15 @@ public class EnemyMovement : MonoBehaviour
         Vector3 dir = possibleDirections[Random.Range(0, Mathf.Min(possibleDirections.Count, random))];
         //Debug.DrawLine(transform.position, transform.position + dir, Color.yellow, 1f);
         return transform.position + dir;
+    }
+
+    public void GetStunned(float time)
+    {
+        Debug.Log("getting stunned");
+        Debug.Break();
+        stunTime = time;
+        stunCount = 0;
+        stunned = true;
     }
 
 }

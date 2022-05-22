@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MeleeEnemyController : MonoBehaviour
 {
+    public bool stunned;
     [SerializeField] private float idleTime, wanderTime;
     [SerializeField] private float wanderDistance, aggroRange, aggroLeashRange;
     [SerializeField] private float wanderSpeed, chaseSpeed, pathfindDistance;
     private Transform player;
     private Rigidbody rb;
-    private float count;
+    private float count, stunCount, stunTime;
     private int curAttacks;
     private Vector3 target;
     private List<Vector3> possibleDirections;
@@ -45,6 +46,19 @@ public class MeleeEnemyController : MonoBehaviour
 
     private void Update()
     {
+        if(stunned)
+        {
+            stunCount += Time.deltaTime;
+            if(stunCount >= stunTime)
+            {
+                stunned = false;
+            }
+            else
+            {
+                 return;
+            }
+           
+        }
         count += Time.deltaTime;
         switch (state)
         {
@@ -69,6 +83,10 @@ public class MeleeEnemyController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(stunned)
+        {
+            return;
+        }
         switch (state)
         {
             case EnemyState.Wander:
@@ -149,6 +167,7 @@ public class MeleeEnemyController : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
         transform.rotation = rotation;
         rb.MovePosition(transform.position + (transform.forward * wanderSpeed * Time.fixedDeltaTime));
+        Debug.DrawRay(transform.position, transform.forward, Color.yellow, .1f);
     }
 
 
@@ -279,6 +298,14 @@ public class MeleeEnemyController : MonoBehaviour
         return transform.position + dir;
     }
 
+    public void GetStunned(float time)
+    {
+        Debug.Log("getting stunned");
+       // Debug.Break();
+        stunTime = time;
+        stunCount = 0;
+        stunned = true;
+    }
 
   
 

@@ -40,6 +40,11 @@ public class EnemyHP : MonoBehaviour
         if(other.CompareTag("explosion"))
         {
             TakeDamage(other.GetComponent<ExplosionController>().damage);
+            //Debug.Log("touching explosion");
+            if(GetComponent<MeleeEnemyController>() != null)
+            {
+                GetComponent<MeleeEnemyController>().GetStunned(.5f);
+            }
         }
     }
 

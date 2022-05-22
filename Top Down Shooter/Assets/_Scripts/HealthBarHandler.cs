@@ -22,7 +22,7 @@ public class HealthBarHandler : MonoBehaviour
         redHealth.fillAmount = value;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if(showing)
         {
