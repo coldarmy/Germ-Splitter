@@ -8,6 +8,7 @@ public class GlaiveController : MonoBehaviour
     [SerializeField] private float range, moveSpeed;
     [SerializeField] private int startingBounces;
     [SerializeField] private int[] damages;
+    [SerializeField] private float[] stunTimes;
     [SerializeField] private GameObject particles;
     private int curBounce;
     private Transform target;
@@ -63,7 +64,7 @@ public class GlaiveController : MonoBehaviour
         GameObject exp = LeanPool.Spawn(particles);
         exp.transform.position = this.transform.position;
         
-        target.GetComponent<EnemyHP>().TakeDamage(damages[curBounce]);
+        target.GetComponent<EnemyHP>().TakeDamage(damages[curBounce], stunTimes[curBounce]);
         //also spawn explosion effect?
         curBounce++;
         if(curBounce < startingBounces)

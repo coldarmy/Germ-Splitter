@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Machine Gun Bullet
   cooldown: 0.4
-  playerKB: 500
-  FireForce: 5000
   hitKB: 10
   lifeTime: 0.25
   moveSpeed: 30
+  energyCost: 0
+  stunTime: 0.25
   bulletObject: {fileID: 2836085010465616092, guid: 9ff58a0e186e52c46b1894d4073b0153,
     type: 3}
   damage: 10

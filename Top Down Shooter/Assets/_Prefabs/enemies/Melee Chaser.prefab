@@ -326,7 +326,6 @@ GameObject:
   - component: {fileID: 6575479302411015358}
   - component: {fileID: 7766968561821790640}
   - component: {fileID: 6842218274613960054}
-  - component: {fileID: 6194034383769056147}
   - component: {fileID: 7611261511199259611}
   m_Layer: 0
   m_Name: Melee Chaser
@@ -464,28 +463,6 @@ MonoBehaviour:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0.8113208, g: 0.3556971, b: 0.057404764, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &6194034383769056147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6575479302411015344}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95dc77b82c5c67749af95293eb3e2078, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stunned: 0
-  idleTime: 0
-  wanderTime: 4
-  wanderDistance: 20
-  aggroRange: 10
-  aggroLeashRange: 15
-  wanderSpeed: 5
-  chaseSpeed: 9
-  pathfindDistance: 10
-  state: 0
 --- !u!114 &7611261511199259611
 MonoBehaviour:
   m_ObjectHideFlags: 0

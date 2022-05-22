@@ -23,7 +23,7 @@ public class PlayerBulletController : BulletController
         {
             // Debug.Log("hit enemy");
             // collision.gameObject.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletController.myBulletData.damage);
-            collision.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletData.damage);
+            collision.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletData.damage, myBulletData.stunTime);
             
             Debug.Log("touching enemy");
             if (glaiveSpawner != null)

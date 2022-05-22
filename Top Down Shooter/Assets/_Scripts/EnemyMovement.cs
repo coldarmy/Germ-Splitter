@@ -391,12 +391,17 @@ public class EnemyMovement : MonoBehaviour
     }
 
     public void GetStunned(float time)
-    {
-        Debug.Log("getting stunned");
-        Debug.Break();
-        stunTime = time;
-        stunCount = 0;
-        stunned = true;
+    {        
+        if(stunned)
+        {
+            stunTime += time;
+        }
+        else
+        {
+            stunTime = time;
+            stunCount = 0;
+            stunned = true;
+        }        
     }
 
 }

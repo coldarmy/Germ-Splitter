@@ -13,19 +13,27 @@ public class EnemyHP : MonoBehaviour
     private int curHP;
     private EnemyMaterialController matController;
     [SerializeField]private HealthBarHandler myHP;
+    private EnemyMovement myEnemyMovement;
     private void OnEnable()
     {
         curHP = startingHP;
         matController = GetComponent<EnemyMaterialController>();
         myHP = EnemyUIController.instance.GetUnusedHPBar(this.transform);
+        myEnemyMovement = GetComponent<EnemyMovement>();
     }
 
-    public void TakeDamage(int dmg)
+    public void TakeDamage(int dmg, float stunTime)
     {
         curHP -= dmg;
         myHP.ShowHealthBar(true);
         myHP.UpdateHPValue((float)curHP / (float)startingHP);
-        
+        if(stunTime > 0)
+        {
+            if(myEnemyMovement != null)
+            {
+                myEnemyMovement.GetStunned(stunTime);
+            }
+        }
         //ToggleFlash(true);
         matController.ToggleFlash(true);
         HitFeedback?.PlayFeedbacks();
@@ -39,7 +47,8 @@ public class EnemyHP : MonoBehaviour
     {
         if(other.CompareTag("explosion"))
         {
-            TakeDamage(other.GetComponent<ExplosionController>().damage);
+            ExplosionController ex = other.GetComponent<ExplosionController>();
+            TakeDamage(ex.damage, ex.stunTime);
             //Debug.Log("touching explosion");
             if(GetComponent<MeleeEnemyController>() != null)
             {
@@ -63,7 +72,7 @@ public class EnemyHP : MonoBehaviour
 
     public void TakeSuicideDamage()
     {
-        TakeDamage(startingHP);
+        TakeDamage(startingHP, 0f);
     }
 
    

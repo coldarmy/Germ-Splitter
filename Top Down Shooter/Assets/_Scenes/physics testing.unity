@@ -1532,6 +1532,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player mutalisk
       objectReference: {fileID: 0}
+    - target: {fileID: 2337780731634523886, guid: 8a0ae97d450e05045acdbe7a8056ca57,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2337780731634523924, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
       propertyPath: invulnerableDebug

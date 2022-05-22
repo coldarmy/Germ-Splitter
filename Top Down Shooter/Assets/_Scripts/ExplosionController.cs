@@ -8,6 +8,7 @@ public class ExplosionController : MonoBehaviour
     [SerializeField] private float lifeTime, explosioinForce;
     [SerializeField] private Vector3 finalScale;
     public int damage;
+    public float stunTime;
     private Poolable _poolable;
 
     private void OnEnable()
