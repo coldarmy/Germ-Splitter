@@ -123,8 +123,9 @@ MonoBehaviour:
   maxMoveSpeed: 15
   rotSpeed: 100
   accelRate: 15
-  decelRate: 100
+  decelRate: 25
   curMoveSpeed: 0
+  moving: 0
 --- !u!114 &2337780731634523924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,8 +313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashSpeed: 50
-  dashTime: 0.25
   dashEnergy: 10
+  dashTime: 0.25
   dashing: 0
 --- !u!1 &2572340870607059928
 GameObject:

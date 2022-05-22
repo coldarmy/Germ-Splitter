@@ -9,7 +9,7 @@ public class MutaMovement : MonoBehaviour
     [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate;
     private float distanceToCam;
     [SerializeField] private float curMoveSpeed;
-    private bool moving;
+    [SerializeField]private bool moving;
     private Camera cam;
     private Vector3 moveDir;
     private GunController myGun;
@@ -34,7 +34,20 @@ public class MutaMovement : MonoBehaviour
         moveDir = transform.forward;
         if(controlState == ControlType.Mouse)
         {
+           // moving = true;
+        }
+    }
+
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Vertical"))
+        {
             moving = true;
+        }
+        if (Input.GetButtonUp("Vertical"))
+        {
+            moving = false;
         }
     }
 
@@ -73,10 +86,7 @@ public class MutaMovement : MonoBehaviour
                 Debug.Log("trying to shoot rocket");
                 myGun.ShootSpecial(moveDir);
             }
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                moving = !moving;
-            }
+            
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetMouseButton(2))
             {
                 if(_dashController.CanDash())

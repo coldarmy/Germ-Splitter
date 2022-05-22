@@ -199,7 +199,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b72bd15e88ebc4582bc5046e7679a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stunned: 0
   idleTime: 0
   wanderTime: 3
   attackWindUpTime: 0.25
