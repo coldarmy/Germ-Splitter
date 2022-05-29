@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7399995708843984652}
   - component: {fileID: 5529614245137368642}
   m_Layer: 0
-  m_Name: explosion
+  m_Name: landmine explosion
   m_TagString: explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,9 +62,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 0.15
-  explosioinForce: 750
-  finalScale: {x: 12, y: 12, z: 12}
-  damage: 10
+  explosioinForce: 1200
+  finalScale: {x: 8, y: 8, z: 8}
+  damage: 30
   stunTime: 0.5
 --- !u!54 &7399995708843984652
 Rigidbody:
@@ -155,7 +155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a169a75d065778d43bdabbe1097da6d7, type: 2}
+  - {fileID: 2100000, guid: 894fa61f3a6269747b79df1bd99a23cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

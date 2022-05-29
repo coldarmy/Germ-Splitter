@@ -110,4 +110,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_3rdParty/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/Demo/MMSceneLoadingDemoSceneB.unity
     guid: 352d34cac2435634fb99618d19a3929c
+  - enabled: 1
+    path: Assets/_Scenes/Muta.unity
+    guid: b11eb653df1210a47a8817432600e626
   m_configObjects: {}

@@ -21,7 +21,7 @@ public class PlayerBulletController : BulletController
     {
         if (collision.gameObject.gameObject.CompareTag("Enemy"))
         {
-            // Debug.Log("hit enemy");
+             Debug.Log("hit enemy", this);
             // collision.gameObject.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletController.myBulletData.damage);
             collision.gameObject.GetComponent<EnemyHP>().TakeDamage(myBulletData.damage, myBulletData.stunTime);
             

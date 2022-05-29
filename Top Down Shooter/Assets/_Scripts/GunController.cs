@@ -6,10 +6,10 @@ using MoreMountains.Feedbacks;
 public class GunController : MonoBehaviour
 {
 
-    public BulletData standardBullet, specialBullet;
+    public BulletData standardBullet, specialBullet1, specialBullet2;
     public MMFeedbacks ShootFeedback;
     [SerializeField] private Rigidbody rb;
-    private float bulletOffset = .65f;
+    private float forwardBulletOffset = .65f;
     private float shootCD; // get these values from the bullet
     private float cooldown;
     private LineRenderer lr;
@@ -36,12 +36,6 @@ public class GunController : MonoBehaviour
 
     private void Update()
     {
-      /*  if (Input.GetKeyDown(KeyCode.P))
-        {
-            Debug.Log("pressing p");
-           // ObjectPoolManager.instance.SpawnExplosion(transform.position);
-
-        }*/
 
         if (cooldown > 0)
         {
@@ -51,22 +45,49 @@ public class GunController : MonoBehaviour
 
     public void ShootGun(Vector3 dir)
     {
-        BulletSpawner.instance.SpawnBullet(standardBullet, dir, this.transform.position, bulletOffset);
+        BulletSpawner.instance.SpawnBullet(standardBullet, dir, this.transform.position, forwardBulletOffset);
         ShootFeedback?.PlayFeedbacks();
         cooldown = shootCD;
     }
 
-    public void ShootSpecial(Vector3 dir)
+    public void ShootSpecial1(Vector3 dir)
     {
-        if(EnergyController.CanShoot(specialBullet.energyCost))
+        if(EnergyController.CanShoot(specialBullet1.energyCost))
         {
-            Debug.Log("spawning special");
-            BulletSpawner.instance.SpawnBullet(specialBullet, dir, this.transform.position, bulletOffset);
+            if(specialBullet1.backwards)
+            {
+                BulletSpawner.instance.SpawnBullet(specialBullet1, dir, this.transform.position, -forwardBulletOffset);
+            }
+            else
+            {
+                BulletSpawner.instance.SpawnBullet(specialBullet1, dir, this.transform.position, forwardBulletOffset);
+            }
+            
             ShootFeedback?.PlayFeedbacks();
             cooldown = shootCD;
-            EnergyController.ChangeEnergy(-specialBullet.energyCost);
+            EnergyController.ChangeEnergy(-specialBullet1.energyCost);
         }        
     }
+
+    public void ShootSpecial2(Vector3 dir)
+    {
+        if (EnergyController.CanShoot(specialBullet2.energyCost))
+        {
+            if(specialBullet2.backwards)
+            {
+                BulletSpawner.instance.SpawnBullet(specialBullet2, dir, this.transform.position, -forwardBulletOffset);
+            }
+            else
+            {
+                BulletSpawner.instance.SpawnBullet(specialBullet2, dir, this.transform.position, forwardBulletOffset);
+            }
+            
+            ShootFeedback?.PlayFeedbacks();
+            cooldown = shootCD;
+            EnergyController.ChangeEnergy(-specialBullet2.energyCost);
+        }
+    }
+
 
     public bool CanShoot()
     {

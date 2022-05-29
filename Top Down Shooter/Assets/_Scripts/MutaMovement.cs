@@ -49,6 +49,31 @@ public class MutaMovement : MonoBehaviour
         {
             moving = false;
         }
+
+        if (Input.GetMouseButton(0) && myGun.CanShoot())
+        {
+            shootDir = (mouseTarget - transform.position).normalized;
+            myGun.ShootGun(shootDir);
+        }
+        if (Input.GetMouseButton(1) && myGun.CanShoot())
+        {
+            myGun.ShootSpecial1(moveDir);
+        }
+
+        if (Input.GetMouseButton(2) && myGun.CanShoot())
+        {
+            //Debug.Log("trying to shoot mine");
+            myGun.ShootSpecial2(moveDir);
+        }
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if (_dashController.CanDash())
+            {
+                StartDash();
+            }
+
+        }
     }
 
     private void FixedUpdate()
@@ -76,25 +101,7 @@ public class MutaMovement : MonoBehaviour
         {
             LookAtMouse();
             ChangeAcceleration(!moving);
-            if (Input.GetMouseButton(0) && myGun.CanShoot())
-            {
-                shootDir = (mouseTarget - transform.position).normalized;
-                myGun.ShootGun(shootDir);
-            }
-            if (Input.GetMouseButton(1) && myGun.CanShoot())
-            {
-                Debug.Log("trying to shoot rocket");
-                myGun.ShootSpecial(moveDir);
-            }
             
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetMouseButton(2))
-            {
-                if(_dashController.CanDash())
-                {
-                    StartDash();
-                }
-                
-            }
         }        
         MoveForward();
 

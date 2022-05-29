@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5621743007510057348}
   - component: {fileID: 8990683992951869586}
   - component: {fileID: 1669350257482789513}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7903680714264064450}
   - component: {fileID: 9109770932888386219}
   - component: {fileID: 1232893913466894738}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: death feedbacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 2354270722180682605}
   - component: {fileID: 8595046907109704683}
   - component: {fileID: 6014122897773770942}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: hit feedbacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 5223182990099098285}
   - component: {fileID: 8715980503370420128}
   - component: {fileID: 5604944773322466150}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Super Chaser Shooter
   m_TagString: Enemy
   m_Icon: {fileID: 0}

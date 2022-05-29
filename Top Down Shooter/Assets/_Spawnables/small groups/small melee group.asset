@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: small melee group
   m_EditorClassIdentifier: 
   difficulty: 1
-  tokenCost: 2
+  tokenCost: 3
   enemies:
   - {fileID: 6575479302411015344, guid: 8a300ba491f29ee4cbe0bbc7de6cf080, type: 3}
   - {fileID: 6575479302411015344, guid: 8a300ba491f29ee4cbe0bbc7de6cf080, type: 3}

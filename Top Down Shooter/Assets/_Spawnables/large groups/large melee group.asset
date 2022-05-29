@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61883a33ede290c449d4ac1a4f46300e, type: 3}
   m_Name: large melee group
   m_EditorClassIdentifier: 
-  difficulty: 2
-  tokenCost: 3
+  difficulty: 3
+  tokenCost: 4
   enemies:
   - {fileID: 6575479302411015344, guid: 8a300ba491f29ee4cbe0bbc7de6cf080, type: 3}
   - {fileID: 6575479302411015344, guid: 8a300ba491f29ee4cbe0bbc7de6cf080, type: 3}

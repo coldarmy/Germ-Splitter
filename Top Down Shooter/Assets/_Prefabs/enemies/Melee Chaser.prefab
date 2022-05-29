@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3220897647219772083}
   - component: {fileID: 3778208489530313124}
   - component: {fileID: 4769932041665548684}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: hit feedbacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 4037868847417548966}
   - component: {fileID: 3821322958879277840}
   - component: {fileID: 1084238706833978319}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: death feedbacks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 7766968561821790640}
   - component: {fileID: 6842218274613960054}
   - component: {fileID: 7611261511199259611}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Melee Chaser
   m_TagString: Enemy
   m_Icon: {fileID: 0}

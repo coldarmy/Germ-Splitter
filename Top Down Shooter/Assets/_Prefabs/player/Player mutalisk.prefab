@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1468748851482283087}
   - component: {fileID: 1931648774077091306}
   - component: {fileID: 6063801246489078098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player mutalisk
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -159,7 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardBullet: {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
-  specialBullet: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
+  specialBullet1: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
+  specialBullet2: {fileID: 11400000, guid: 52714e88bfe336a4f943c9154aec88f8, type: 2}
   ShootFeedback: {fileID: 8721631062084231103}
   rb: {fileID: 0}
 --- !u!96 &1535779122480506448
@@ -326,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7970218671297361704}
   - component: {fileID: 8721631062084231103}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ShootFeedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +404,7 @@ GameObject:
   - component: {fileID: 9038255153416252649}
   - component: {fileID: 453243280038358004}
   - component: {fileID: 1174324725488460697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hit Feedback
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61883a33ede290c449d4ac1a4f46300e, type: 3}
   m_Name: small turret group
   m_EditorClassIdentifier: 
-  difficulty: 2
+  difficulty: 3
   tokenCost: 5
   enemies:
-  - {fileID: 4177489452555983350, guid: 7fb095ffeb2768d48bfbd124606dabdf, type: 3}
   - {fileID: 4177489452555983350, guid: 7fb095ffeb2768d48bfbd124606dabdf, type: 3}
   - {fileID: 4177489452555983350, guid: 7fb095ffeb2768d48bfbd124606dabdf, type: 3}
