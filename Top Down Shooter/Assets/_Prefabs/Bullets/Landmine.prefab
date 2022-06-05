@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6109526007642412737}
   - component: {fileID: 2424128513840963636}
   m_Layer: 24
-  m_Name: Mine
+  m_Name: Landmine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,6 +133,16 @@ MonoBehaviour:
   myBulletData: {fileID: 11400000, guid: 52714e88bfe336a4f943c9154aec88f8, type: 2}
   explosion: {fileID: 4708416551392795355, guid: 89aeddb5fd6a8c64da82ce49de521768,
     type: 3}
+  light: {fileID: 4274726237045375970}
+  lightMats:
+  - {fileID: 2100000, guid: d15897a066fc1bd4e873db20d70da822, type: 2}
+  - {fileID: 2100000, guid: 738f118aa214360489366338953cfd32, type: 2}
+  primingTime: 2.5
+  regularExplosion: {fileID: 4708416551392795355, guid: 89aeddb5fd6a8c64da82ce49de521768,
+    type: 3}
+  primedExplosion: {fileID: 4708416551392795355, guid: 12e54c2842b0fa349b5059b17db28a44,
+    type: 3}
+  primed: 0
 --- !u!135 &2424128513840963636
 SphereCollider:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ public class BulletController : MonoBehaviour
 
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         count += Time.deltaTime;
         if( count >= lifeTime)

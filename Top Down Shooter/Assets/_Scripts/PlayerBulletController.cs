@@ -1,20 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Lean.Pool;
 
 public class PlayerBulletController : BulletController
 {
     public delegate void BulletEvent(ExplosionController ex);
     public static BulletEvent SpawnExplosion;
     //private BulletController myBulletController;
-    [SerializeField] ExplosionController explosion;
+    [SerializeField] private ExplosionController explosion;
     private GlaiveSpawner glaiveSpawner;
-    
 
-    private void OnEnable()
+
+    protected virtual void OnEnable()
     {
         glaiveSpawner = GetComponent<GlaiveSpawner>();
         base.OnEnable();
+    }
+
+    protected virtual void Update()
+    {
+        base.Update();
     }
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
@@ -39,9 +45,16 @@ public class PlayerBulletController : BulletController
         if(explosion != null)
         {
             // SpawnExplosion?.Invoke(explosion);
-            ObjectPoolManager.instance.SpawnExplosion(transform.position);
+            SpawnBulletExplosion();
         }
        
         base.TurnOffBullet();
+    }
+
+    public virtual void SpawnBulletExplosion()
+    {
+        GameObject exp = LeanPool.Spawn(explosion.gameObject);
+        exp.transform.position = this.transform.position;
+        //ObjectPoolManager.instance.SpawnExplosion(transform.position);
     }
 }
