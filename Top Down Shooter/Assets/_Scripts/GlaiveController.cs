@@ -63,8 +63,13 @@ public class GlaiveController : MonoBehaviour
     {
         GameObject exp = LeanPool.Spawn(particles);
         exp.transform.position = this.transform.position;
+        EnemyHP hp = target.GetComponent<EnemyHP>();
+        if(hp != null)
+        {
+            hp.TakeDamage(damages[curBounce], stunTimes[curBounce]);
+        }
         
-        target.GetComponent<EnemyHP>().TakeDamage(damages[curBounce], stunTimes[curBounce]);
+
         //also spawn explosion effect?
         curBounce++;
         if(curBounce < startingBounces)
@@ -87,7 +92,7 @@ public class GlaiveController : MonoBehaviour
         {
             foreach(Collider c in cols)
             {
-                if(c.gameObject.CompareTag("Enemy"))
+                if(c.gameObject.CompareTag("Enemy") || c.gameObject.CompareTag("mine"))
                 {
                     if(!previousTargets.Contains(c.transform))
                     {

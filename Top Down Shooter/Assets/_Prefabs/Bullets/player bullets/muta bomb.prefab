@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4553769301196850734}
   - component: {fileID: 4129932913047704269}
   - component: {fileID: 8947443939047823857}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: muta bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myBulletData: {fileID: 11400000, guid: 411437b16fdb2124199ae1d087eb9b23, type: 2}
+  projectileBullet: 1
   explosion: {fileID: 0}
 --- !u!114 &8947443939047823857
 MonoBehaviour:
@@ -88,7 +89,7 @@ GameObject:
   - component: {fileID: 7618572387119793204}
   - component: {fileID: 5274901687345637091}
   - component: {fileID: 3352469137880919211}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: muta bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

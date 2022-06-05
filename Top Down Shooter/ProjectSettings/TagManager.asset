@@ -11,6 +11,7 @@ TagManager:
   - NoMask
   - pickup
   - explosion
+  - mine
   layers:
   - Default
   - TransparentFX

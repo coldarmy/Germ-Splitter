@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Mine
   cooldown: 0.35
   hitKB: 10
-  lifeTime: 5
+  lifeTime: 6
   moveSpeed: 0
-  energyCost: 0
+  energyCost: 20
   stunTime: 0.45
   backwards: 1
   bulletObject: {fileID: 1930445516446247594, guid: d0c4ef0aefe754749958ae7519076a61,

@@ -164,6 +164,7 @@ MonoBehaviour:
   HitFeedback: {fileID: 3410773925831694764}
   DeathFeedback: {fileID: 2172572007645240833}
   startingHP: 10
+  displayHP: 1
   myHP: {fileID: 0}
 --- !u!114 &1574851241301096737
 MonoBehaviour:

@@ -67,4 +67,10 @@ public class LandmineController : PlayerBulletController
         primed = true;
         light.material = lightMats[1];
     }
+
+    public void GetHitByBullet()
+    {
+        primed = true;
+        TurnOffBullet();
+    }
 }

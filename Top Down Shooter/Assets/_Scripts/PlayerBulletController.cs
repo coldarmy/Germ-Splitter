@@ -7,6 +7,7 @@ public class PlayerBulletController : BulletController
 {
     public delegate void BulletEvent(ExplosionController ex);
     public static BulletEvent SpawnExplosion;
+    [SerializeField] private bool projectileBullet;
     //private BulletController myBulletController;
     [SerializeField] private ExplosionController explosion;
     private GlaiveSpawner glaiveSpawner;
@@ -38,7 +39,19 @@ public class PlayerBulletController : BulletController
             }
             TurnOffBullet();
         }
+
+        if(collision.gameObject.CompareTag("mine") && projectileBullet)
+        {
+            collision.gameObject.GetComponent<LandmineController>().GetHitByBullet();
+            if (glaiveSpawner != null)
+            {
+                glaiveSpawner.SpawnGlaive(collision.transform);
+            }
+            TurnOffBullet();
+        }
     }
+
+    
 
     public override void TurnOffBullet()
     {

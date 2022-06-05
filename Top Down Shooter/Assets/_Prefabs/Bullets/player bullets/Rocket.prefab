@@ -4874,6 +4874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myBulletData: {fileID: 11400000, guid: 8e0e5d2fbaa20ff4e98de379922e4dcb, type: 2}
+  projectileBullet: 1
   explosion: {fileID: 4708416551392795355, guid: f273e7647d3c8314c882b602285b765f,
     type: 3}
 --- !u!1 &5999067433733078552

@@ -10,6 +10,7 @@ public class EnemyHP : MonoBehaviour
     public static EnemyEvent OnEnemyDeath;
     public MMFeedbacks HitFeedback, DeathFeedback;
     [SerializeField] private int startingHP;
+    [SerializeField] private bool displayHP = true;
     private int curHP;
     private EnemyMaterialController matController;
     [SerializeField]private HealthBarHandler myHP;
@@ -18,15 +19,23 @@ public class EnemyHP : MonoBehaviour
     {
         curHP = startingHP;
         matController = GetComponent<EnemyMaterialController>();
-        myHP = EnemyUIController.instance.GetUnusedHPBar(this.transform);
+        if(displayHP)
+        {
+            myHP = EnemyUIController.instance.GetUnusedHPBar(this.transform);
+        }
+        
         myEnemyMovement = GetComponent<EnemyMovement>();
     }
 
     public void TakeDamage(int dmg, float stunTime)
     {
         curHP -= dmg;
-        myHP.ShowHealthBar(true);
-        myHP.UpdateHPValue((float)curHP / (float)startingHP);
+        if(myHP !=null)
+        {
+            myHP.ShowHealthBar(true);
+            myHP.UpdateHPValue((float)curHP / (float)startingHP);
+        }
+        
         if(stunTime > 0)
         {
             if(myEnemyMovement != null)
@@ -35,7 +44,11 @@ public class EnemyHP : MonoBehaviour
             }
         }
         //ToggleFlash(true);
-        matController.ToggleFlash(true);
+        if(matController != null)
+        {
+            matController.ToggleFlash(true);
+        }
+        
         HitFeedback?.PlayFeedbacks();
         if (curHP <= 0)
         {
@@ -57,17 +70,27 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    private void Die()
+    public virtual void Die()
     {
         DeathFeedback?.PlayFeedbacks();
-        myHP.UnassignHPBar();
-        OnEnemyDeath?.Invoke(transform.position);
+        if(myHP != null)
+        {
+            myHP.UnassignHPBar();
+        }
+        if(displayHP)
+        {
+            OnEnemyDeath?.Invoke(transform.position);
+        }
+        
         this.gameObject.SetActive(false);
     }
 
     public void AssignHPBar(HealthBarHandler newHP)
     {
-        myHP = newHP;
+        if (myHP != null)
+        {
+            myHP = newHP;
+        }
     }
 
     public void TakeSuicideDamage()
