@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float wanderSpeed, chaseSpeed;
     [SerializeField] private int numAttacks;
     [SerializeField] private BulletData myBullet;
-    [SerializeField] private bool _MoveAndShoot;
+    [SerializeField] private bool _MoveAndShoot, _TrackTargetWhileAiming;
     private float bulletOffset = 1f;
     private bool onAttackCoolDown;
     private Transform player;
@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] private EnemyState state;
 
-    private void OnEnable()
+    public virtual void OnEnable()
     {
         if(rb == null)
         {
@@ -51,7 +51,7 @@ public class EnemyMovement : MonoBehaviour
             
     }
 
-    private void Update()
+    public virtual void Update()
     {
         if (stunned)
         {
@@ -98,7 +98,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if(stunned)
         {
@@ -116,6 +116,10 @@ public class EnemyMovement : MonoBehaviour
                 if(_MoveAndShoot)
                 {
                     FollowPlayer();
+                }
+                if(_TrackTargetWhileAiming)
+                {
+                    transform.LookAt(player);
                 }
                 break;
             case EnemyState.Attack:
@@ -186,14 +190,14 @@ public class EnemyMovement : MonoBehaviour
     }
 
 
-    private void GoToIdle()
+    public virtual void GoToIdle()
     {
         count = 0;
         state = EnemyState.Idle;
         matController.GoIdleMat();
     }
 
-    private void GoToWander()
+    public virtual void GoToWander()
     {
         /* float ranX = Random.Range(-wanderDistance, wanderDistance);
          float ranZ = Random.Range(-wanderDistance, wanderDistance);
@@ -206,7 +210,7 @@ public class EnemyMovement : MonoBehaviour
         state = EnemyState.Wander;
     }
 
-    private void GoToChase()
+    public virtual void GoToChase()
     {
         matController.GoAggroMat();
         // player = PlayerController.instance.transform;
@@ -215,7 +219,7 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    private void GoToWindUp()
+    public virtual void GoToWindUp()
     {
         matController.GoWindUpMat();
         count = 0;
@@ -404,4 +408,8 @@ public class EnemyMovement : MonoBehaviour
         }        
     }
 
+    public float GetAttackRange()
+    {
+        return attackRange;
+    }
 }

@@ -233,6 +233,7 @@ MonoBehaviour:
   numAttacks: 1
   myBullet: {fileID: 11400000, guid: 2d395df8615c30c45992d52c06e4184c, type: 2}
   _MoveAndShoot: 1
+  _TrackTargetWhileAiming: 0
   state: 0
 --- !u!114 &2258153103118314313
 MonoBehaviour:

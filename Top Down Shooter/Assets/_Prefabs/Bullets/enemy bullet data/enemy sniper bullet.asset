@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7aa977d4da391141805ba974a815d05, type: 3}
+  m_Name: enemy sniper bullet
+  m_EditorClassIdentifier: 
+  name: enemy sniper bullet
+  cooldown: 0.35
+  hitKB: 0
+  lifeTime: 1
+  moveSpeed: 25
+  energyCost: 0
+  stunTime: 0
+  backwards: 0
+  bulletObject: {fileID: 3816565428497927102, guid: 380373ba2e001ad42859c063706208cf,
+    type: 3}
+  damage: 1
+  poolSize: 10
