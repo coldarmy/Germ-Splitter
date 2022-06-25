@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,8 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: 5
-  budget: 25
+  startingBudget: 0
+  curBudget: 0
   waveNum: 1
+  wavesPerDifficulty: 0
   spawnables:
   - {fileID: 11400000, guid: 55fb465efd565d543931bdadd3238bf9, type: 2}
   - {fileID: 11400000, guid: 33588e9d763a21f42ad9b438f3199984, type: 2}
@@ -59,5 +62,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6a52092892d63d449a96f70ea81aed07, type: 2}
   - {fileID: 11400000, guid: f6bbbdd34b611e14fa52b29caf95fb8d, type: 2}
   - {fileID: 11400000, guid: 8ed674091ede337479229b214af17ec1, type: 2}
+  - {fileID: 11400000, guid: 8b39fc659cc9b6b4498dbb72df6796a3, type: 2}
+  - {fileID: 11400000, guid: ccbc89b8c329f304dbf323cf1e269cac, type: 2}
+  - {fileID: 11400000, guid: 1f17649abda440c40a1907b5ba10775b, type: 2}
   spawnPredictor: {fileID: 4056284960543211579, guid: 673697689c8aa2947b763864b76d28a9,
     type: 3}
+  livingEnemies: 0
