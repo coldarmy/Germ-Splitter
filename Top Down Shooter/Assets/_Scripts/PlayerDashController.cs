@@ -7,6 +7,8 @@ public class PlayerDashController : MonoBehaviour
     public float dashSpeed, maxBoostSpeed, curBoostSpeed;
     [SerializeField] private float boostAcceleration, boosterDeceleration;
     [SerializeField] private float dashEnergy, dashTime, boostEnergy;
+    [SerializeField] private TrailRenderer[] trails;
+    [SerializeField] private Material[] trailMats;
     public bool dashing;
     private float dashCounter;
     private PlayerEnergyController _energy;
@@ -18,26 +20,20 @@ public class PlayerDashController : MonoBehaviour
 
     private void Update()
     {
-      /*  if(dashing)
-        {
-            dashCounter += Time.deltaTime;
-            if(dashCounter >= dashTime)
-            {
-                dashing = false;
-            }
-        }*/
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if(CanBoost())
             {                
                 dashing = true;
+                FlipTrails(false);
             }
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             dashing = false;
+            FlipTrails(true);
         }
 
         if(dashing)
@@ -50,12 +46,14 @@ public class PlayerDashController : MonoBehaviour
             else
             {
                 dashing = false;
+                FlipTrails(true);
             }
         }
         else
         {
             
             AdjustBoostSpeed(false);
+            FlipTrails(true);
         }
     }
 
@@ -97,4 +95,17 @@ public class PlayerDashController : MonoBehaviour
         }
     }
 
+    private void FlipTrails(bool normalTrail)
+    {
+        if(normalTrail)
+        {
+            trails[0].material = trailMats[0];
+            //trails[0].time = .25f;
+        }
+        else
+        {
+            trails[0].material = trailMats[1];
+            //trails[0].time = .3f;
+        }
+    }
 }

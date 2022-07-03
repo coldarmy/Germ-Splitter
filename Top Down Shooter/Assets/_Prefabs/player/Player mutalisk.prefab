@@ -208,7 +208,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.5
+  m_Time: 0.3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -324,6 +324,11 @@ MonoBehaviour:
   dashEnergy: 10
   dashTime: 0.25
   boostEnergy: 5
+  trails:
+  - {fileID: 1535779122480506448}
+  trailMats:
+  - {fileID: 2100000, guid: fb5111ff628436844a071a019195bac5, type: 2}
+  - {fileID: 2100000, guid: c816f67f7043d0848be4e36ed8d01867, type: 2}
   dashing: 0
 --- !u!1 &2572340870607059928
 GameObject:
