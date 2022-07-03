@@ -61,7 +61,7 @@ public class PickUpHandler : MonoBehaviour
         while (t < 1)
         {
             p.transform.position = Vector3.Lerp(p.transform.position, transform.position, t);
-            t += Time.deltaTime * 4f;
+            t += Time.deltaTime * 1.5f;
             yield return null;
         }
         if (p._type == PickUpController.pickupType.health)
