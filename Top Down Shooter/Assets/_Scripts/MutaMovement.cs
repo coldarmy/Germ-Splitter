@@ -8,8 +8,9 @@ public class MutaMovement : MonoBehaviour
     [SerializeField] private ControlType controlState;
     [SerializeField] private float maxMoveSpeed, rotSpeed, accelRate, decelRate;
     private float distanceToCam;
-    [SerializeField] private float curMoveSpeed;
-    [SerializeField]private bool moving;
+    [SerializeField] private float curMoveSpeed, finalMoveSpeed;
+    [SerializeField]private bool moving, boosting;
+    [SerializeField] public bool usingBoost;
     private Camera cam;
     private Vector3 moveDir;
     private GunController myGun;
@@ -68,10 +69,17 @@ public class MutaMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            if (_dashController.CanDash())
+        /*    if(usingBoost)
             {
-                StartDash();
+                TryToBoost();
             }
+            else
+            {
+                if (_dashController.CanDash())
+                {
+                    StartDash();
+                }
+            }*/           
 
         }
     }
@@ -97,33 +105,46 @@ public class MutaMovement : MonoBehaviour
 
     private void HandleMouseMovement()
     {
-        if(!_dashController.dashing)
+       /* if(!_dashController.dashing)
         {
-            LookAtMouse();
-            ChangeAcceleration(!moving);
+           
+            ChangeAcceleration(!moving, _dashController.dashing);
             
-        }        
+        }*/
+      
+        ChangeAcceleration(!moving, _dashController.dashing);
+        LookAtMouse();
         MoveForward();
 
     }
    
 
-    private void ChangeAcceleration(bool slowing)
+    private void ChangeAcceleration(bool slowing, bool boosting)
     {
-        if(slowing)
-        {
-            curMoveSpeed -= decelRate * Time.deltaTime;            
-        }
-        else
+        if(boosting)
         {
             curMoveSpeed += accelRate * Time.deltaTime;
         }
+        else
+        {
+            if (slowing)
+            {
+                curMoveSpeed -= decelRate * Time.deltaTime;
+            }
+            else
+            {
+                curMoveSpeed += accelRate * Time.deltaTime;
+            }
+        }
+
+       
         curMoveSpeed = Mathf.Clamp(curMoveSpeed, 0, maxMoveSpeed);
     }    
 
     private void MoveForward()
     {
-        _rb.velocity = moveDir * curMoveSpeed;// * Time.fixedDeltaTime;
+        finalMoveSpeed = curMoveSpeed * _dashController.curBoostSpeed;
+        _rb.velocity = moveDir * finalMoveSpeed;// curMoveSpeed * _dashController.curBoostSpeed;// * Time.fixedDeltaTime;
     }
 
     private void LookAtMouse()
@@ -149,10 +170,23 @@ public class MutaMovement : MonoBehaviour
         return pos;
     }
 
-    public void StartDash()
+  /*  public void StartDash()
     {
-        Debug.Log("dashing");
+       // Debug.Log("dashing");
         _dashController.StartDash();
         curMoveSpeed = _dashController.dashSpeed;
-    }
+    }*/
+
+   /* private void TryToBoost()
+    {
+        if(_dashController.CanBoost())
+        {
+            _dashController.SpendBoostEnergy();
+            curMoveSpeed = _dashController.boostSpeed;
+        }
+        else
+        {
+            //curMoveSpeed = 
+        }
+    }*/
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerDashController : MonoBehaviour
 {
-    public float dashSpeed;
-    [SerializeField] private float dashEnergy, dashTime;
+    public float dashSpeed, maxBoostSpeed, curBoostSpeed;
+    [SerializeField] private float boostAcceleration, boosterDeceleration;
+    [SerializeField] private float dashEnergy, dashTime, boostEnergy;
     public bool dashing;
     private float dashCounter;
     private PlayerEnergyController _energy;
@@ -17,20 +18,51 @@ public class PlayerDashController : MonoBehaviour
 
     private void Update()
     {
-        if(dashing)
+      /*  if(dashing)
         {
             dashCounter += Time.deltaTime;
             if(dashCounter >= dashTime)
             {
                 dashing = false;
             }
+        }*/
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if(CanBoost())
+            {                
+                dashing = true;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            dashing = false;
+        }
+
+        if(dashing)
+        {
+            SpendBoostEnergy();
+            if(CanBoost())
+            {
+                AdjustBoostSpeed(true);
+            }
+            else
+            {
+                dashing = false;
+            }
+        }
+        else
+        {
+            
+            AdjustBoostSpeed(false);
         }
     }
 
     public bool CanDash()
     {
-        Debug.Log("dash ebergyt: " + dashEnergy);
-        Debug.Log("cur energy: " + _energy.curEnergy);
+        //Debug.Log("dash ebergyt: " + dashEnergy);
+       // Debug.Log("cur energy: " + _energy.curEnergy);
         return dashEnergy <= _energy.curEnergy;
     }
 
@@ -41,5 +73,28 @@ public class PlayerDashController : MonoBehaviour
         _energy.ChangeEnergy(-dashEnergy);
     }
 
+    public bool CanBoost()
+    {
+      //  Debug.Log("boost ebergyt: " + boostEnergy * Time.deltaTime);
+      //   Debug.Log("cur energy: " + _energy.curEnergy);
+        return boostEnergy * Time.deltaTime <= _energy.curEnergy;
+    }
+
+    public void SpendBoostEnergy()
+    {
+        _energy.ChangeEnergy(-boostEnergy * Time.deltaTime);
+    }
+
+    private void AdjustBoostSpeed(bool increasingSpeed)
+    {
+        if(increasingSpeed)
+        {
+            curBoostSpeed = Mathf.Lerp(curBoostSpeed, maxBoostSpeed, boostAcceleration * Time.deltaTime);
+        }
+        else
+        {
+            curBoostSpeed = Mathf.Lerp(curBoostSpeed, 1f, boosterDeceleration * Time.deltaTime);
+        }
+    }
 
 }

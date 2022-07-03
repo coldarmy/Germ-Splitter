@@ -125,7 +125,10 @@ MonoBehaviour:
   accelRate: 15
   decelRate: 25
   curMoveSpeed: 0
+  finalMoveSpeed: 0
   moving: 0
+  boosting: 0
+  usingBoost: 0
 --- !u!114 &2337780731634523924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,8 +317,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashSpeed: 50
+  maxBoostSpeed: 2
+  curBoostSpeed: 1.0000001
+  boostAcceleration: 10
+  boosterDeceleration: 10
   dashEnergy: 10
   dashTime: 0.25
+  boostEnergy: 5
   dashing: 0
 --- !u!1 &2572340870607059928
 GameObject:
