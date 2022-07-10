@@ -286,8 +286,8 @@ Camera:
   m_GameObject: {fileID: 468256360}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.46902812, g: 0.59787667, b: 0.8018868, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1817,6 +1817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1109891330, guid: 8a0ae97d450e05045acdbe7a8056ca57, type: 3}
+      propertyPath: specialBullet2
+      value: 
+      objectReference: {fileID: 11400000, guid: 01ad04f43d879564aaf7602e76265a0c,
+        type: 2}
     - target: {fileID: 2337780731634523886, guid: 8a0ae97d450e05045acdbe7a8056ca57,
         type: 3}
       propertyPath: m_Name
@@ -2275,7 +2280,7 @@ PrefabInstance:
     - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
         type: 3}
       propertyPath: bullets.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
         type: 3}
@@ -2288,6 +2293,18 @@ PrefabInstance:
       propertyPath: bullets.Array.data[5]
       value: 
       objectReference: {fileID: 11400000, guid: 2019826404d67c24ab136ea1cf7a14ca,
+        type: 2}
+    - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
+        type: 3}
+      propertyPath: bullets.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: b595d184fe7a5ea40a3b13ec0f14e55a,
+        type: 2}
+    - target: {fileID: 6909007401879865540, guid: 48c17575932848a4eab7f6d14c3da304,
+        type: 3}
+      propertyPath: bullets.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 01ad04f43d879564aaf7602e76265a0c,
         type: 2}
     - target: {fileID: 6909007401879865541, guid: 48c17575932848a4eab7f6d14c3da304,
         type: 3}
