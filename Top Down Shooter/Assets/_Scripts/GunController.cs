@@ -88,6 +88,23 @@ public class GunController : MonoBehaviour
         }
     }
 
+    public float GetSpecialWeaponEenergy(int num)
+    {
+        if(num == 1)
+        {
+            return specialBullet1.energyCost;
+        }
+        if(num == 2)
+        {
+            return specialBullet2.energyCost;
+        }
+        else
+        {
+            Debug.Log("not valid special weapon number");
+            return 0f;
+        }
+    }
+
 
     public bool CanShoot()
     {

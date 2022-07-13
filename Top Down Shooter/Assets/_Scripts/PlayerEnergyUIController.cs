@@ -6,8 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerEnergyUIController : MonoBehaviour
 {
-    [SerializeField]private Image fill;
-    private float targetAmt;
+    [SerializeField]private Image fill, weaponIcon1, weaponIcon2;
+    [SerializeField] private float bounds;
+    [SerializeField] private Color[] colors;
+    private float targetAmt, weapon1Energy, weapon2Energy;
     private PlayerEnergyController PlayerEnergy;
     private void OnEnable()
     {
@@ -17,6 +19,12 @@ public class PlayerEnergyUIController : MonoBehaviour
     private void Start()
     {
         PlayerEnergy = PlayerController.instance.GetComponent<PlayerEnergyController>();
+        weapon1Energy = PlayerController.instance.GetComponent<GunController>().GetSpecialWeaponEenergy(1);
+        weapon2Energy = PlayerController.instance.GetComponent<GunController>().GetSpecialWeaponEenergy(2);
+        weaponIcon1.transform.position += Vector3.right * ((weapon1Energy / 100f) * bounds);
+        weaponIcon2.transform.position += Vector3.right * ((weapon2Energy / 100f) * bounds);
+        weaponIcon1.color = colors[1];
+        weaponIcon2.color = colors[1];
     }
 
     private void Update()
@@ -36,5 +44,21 @@ public class PlayerEnergyUIController : MonoBehaviour
     private void HandleEnergyChange(float energy)
     {
         targetAmt = (PlayerEnergy.curEnergy / PlayerEnergy.maxEnergy);
+        if(weapon1Energy <= PlayerEnergy.curEnergy)
+        {
+            weaponIcon1.color = colors[0];
+        }
+        else
+        {
+            weaponIcon1.color = colors[1];
+        }
+        if (weapon2Energy <= PlayerEnergy.curEnergy)
+        {
+            weaponIcon2.color = colors[0];
+        }
+        else
+        {
+            weaponIcon2.color = colors[1];
+        }
     }
 }

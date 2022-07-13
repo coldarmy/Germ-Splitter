@@ -17,7 +17,7 @@ MonoBehaviour:
   hitKB: 0
   lifeTime: 0
   moveSpeed: 0
-  energyCost: 35
+  energyCost: 25
   stunTime: 0
   backwards: 0
   bulletObject: {fileID: 2836085010465616092, guid: 65833b42545a75e47a456a6a9e411389,

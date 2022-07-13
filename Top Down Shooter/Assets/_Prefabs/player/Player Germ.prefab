@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 1931648774077091306}
   - component: {fileID: 6063801246489078098}
   m_Layer: 10
-  m_Name: Player mutalisk
+  m_Name: Player Germ
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
