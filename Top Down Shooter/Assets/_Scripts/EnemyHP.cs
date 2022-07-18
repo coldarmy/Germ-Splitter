@@ -15,6 +15,7 @@ public class EnemyHP : MonoBehaviour
     private EnemyMaterialController matController;
     [SerializeField]private HealthBarHandler myHP;
     private EnemyMovement myEnemyMovement;
+    private bool dead;
     private void OnEnable()
     {
         curHP = startingHP;
@@ -72,6 +73,8 @@ public class EnemyHP : MonoBehaviour
 
     public virtual void Die()
     {
+        if (dead) return;
+        dead = true;
         DeathFeedback?.PlayFeedbacks();
         if(myHP != null)
         {

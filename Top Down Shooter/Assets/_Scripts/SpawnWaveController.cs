@@ -13,6 +13,7 @@ public class SpawnWaveController : MonoBehaviour
     private List<Spawnable> validSpawnables;
     private SpawnPredictorController[] spawnPredictors;
     [SerializeField]private int livingEnemies;
+    
 
     private void OnEnable()
     {
@@ -35,7 +36,8 @@ public class SpawnWaveController : MonoBehaviour
     private void HandleEnemyDeath(Vector3 pos)
     {
         livingEnemies--;
-        if(livingEnemies <= 0)
+        EnemyCounterUI.instance.UpdateCount(livingEnemies);
+        if (livingEnemies <= 0)
         {
             EndCurrentWave();
         }
@@ -124,6 +126,7 @@ public class SpawnWaveController : MonoBehaviour
             g.SetSpawnedObject(validSpawnables[ranSpawnable].enemies[i]);
             g.gameObject.SetActive(true);
             livingEnemies++;
+            EnemyCounterUI.instance.UpdateCount(livingEnemies);
         }
         return validSpawnables[ranSpawnable].tokenCost;
     }
@@ -138,28 +141,10 @@ public class SpawnWaveController : MonoBehaviour
               {
                   validSpawns.Add(spawns[i]);
               }*/
-        }
-       /* if (validSpawns.Count < 1)
-        {
-            ResetSpawns(spawns);
-            for (int i = 0; i < spawns.Count; i++)
-            {
-                if (!spawns[i].spawned)
-                {
-                    validSpawns.Add(spawns[i]);
-                }
-            }
-        }*/
+        }     
         
     }
 
-   /* private void ResetSpawns(List<SpawnPos> s)
-    {
-        for(int i = 0; i < s.Count; i++)
-        {
-            s[i].Reset();
-        }
-    }*/
 
     private struct SpawnPos
     {
@@ -174,10 +159,7 @@ public class SpawnWaveController : MonoBehaviour
             this.spawned = false;
         }
 
-      /*  public void Reset()
-        {
-            this.spawned = false;
-        }*/
+    
     }
 
     private void CreateSpawnPredictors()
