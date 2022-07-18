@@ -248,6 +248,7 @@ MonoBehaviour:
   weaponIcon1: {fileID: 3902267475818060664}
   weaponIcon2: {fileID: 3777090205466356661}
   bounds: 50
+  colors: []
 --- !u!1 &8090249967058226501
 GameObject:
   m_ObjectHideFlags: 0

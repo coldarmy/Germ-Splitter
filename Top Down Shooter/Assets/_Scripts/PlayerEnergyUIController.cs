@@ -9,7 +9,7 @@ public class PlayerEnergyUIController : MonoBehaviour
     [SerializeField]private Image fill, weaponIcon1, weaponIcon2;
     [SerializeField] private float bounds;
     [SerializeField] private Color[] colors;
-    private float targetAmt, weapon1Energy, weapon2Energy;
+    [SerializeField]private float targetAmt, weapon1Energy, weapon2Energy;
     private PlayerEnergyController PlayerEnergy;
     private void OnEnable()
     {
@@ -21,8 +21,15 @@ public class PlayerEnergyUIController : MonoBehaviour
         PlayerEnergy = PlayerController.instance.GetComponent<PlayerEnergyController>();
         weapon1Energy = PlayerController.instance.GetComponent<GunController>().GetSpecialWeaponEenergy(1);
         weapon2Energy = PlayerController.instance.GetComponent<GunController>().GetSpecialWeaponEenergy(2);
-        weaponIcon1.transform.position += Vector3.right * ((weapon1Energy / 100f) * bounds);
-        weaponIcon2.transform.position += Vector3.right * ((weapon2Energy / 100f) * bounds);
+       
+        Vector3 newIconPos1 = weaponIcon1.transform.localPosition;
+        newIconPos1.x += weapon1Energy;
+        weaponIcon1.transform.localPosition = newIconPos1;
+
+        Vector3 newIconPos2 = weaponIcon2.transform.localPosition;
+        newIconPos2.x += weapon2Energy;
+        weaponIcon2.transform.localPosition = newIconPos2;
+
         weaponIcon1.color = colors[1];
         weaponIcon2.color = colors[1];
     }
