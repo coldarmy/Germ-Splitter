@@ -487,9 +487,11 @@ MonoBehaviour:
   aggroRange: 10
   aggroLeashRange: 15
   attackRange: 0
+  alertRange: 15
   wanderSpeed: 5
   chaseSpeed: 8
   numAttacks: 0
   myBullet: {fileID: 0}
   _MoveAndShoot: 0
+  _TrackTargetWhileAiming: 0
   state: 0

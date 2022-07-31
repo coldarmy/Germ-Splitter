@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public bool stunned;
     [SerializeField] private float idleTime, wanderTime, attackWindUpTime, attackRate, attackCoolDown, pathfindDistance;
-    [SerializeField] private float wanderDistance, aggroRange, aggroLeashRange, attackRange;
+    [SerializeField] private float wanderDistance, aggroRange, aggroLeashRange, attackRange, alertRange;
     [SerializeField] private float wanderSpeed, chaseSpeed;
     [SerializeField] private int numAttacks;
     [SerializeField] private BulletData myBullet;
@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 target;
     private List<Vector3> possibleDirections;
     private EnemyMaterialController matController;
+    private List<EnemyMovement> alertedAllies;
     [SerializeField] private enum EnemyState
     {
         Idle,
@@ -43,6 +44,7 @@ public class EnemyMovement : MonoBehaviour
             matController = GetComponent<EnemyMaterialController>();
         }
         possibleDirections = new List<Vector3>();
+        alertedAllies = new List<EnemyMovement>();
     }
     private void Start()
     {
@@ -198,13 +200,7 @@ public class EnemyMovement : MonoBehaviour
     }
 
     public virtual void GoToWander()
-    {
-        /* float ranX = Random.Range(-wanderDistance, wanderDistance);
-         float ranZ = Random.Range(-wanderDistance, wanderDistance);
-         target = transform.position;
-         target.x += ranX;
-         target.z += ranZ;
-         Debug.DrawLine(transform.position, target, Color.red, 5f);*/
+    {        
         target = RandomPathfind(5);
         count = 0;
         state = EnemyState.Wander;
@@ -320,7 +316,8 @@ public class EnemyMovement : MonoBehaviour
                 {
                     if (hitColliders[i].CompareTag("Player"))
                     {
-                       // Debug.Log("player still in range: " + Vector3.Distance(transform.position, hitColliders[i].transform.position));
+                        // Debug.Log("player still in range: " + Vector3.Distance(transform.position, hitColliders[i].transform.position));
+                        
                         GoToChase();
                         return;
                     }
@@ -345,6 +342,8 @@ public class EnemyMovement : MonoBehaviour
                 {
                     if (hitColliders[i].CompareTag("Player"))
                     {
+                       // SendOutAlert(transform.position);
+                        SendOutAlert(hitColliders[i].transform.position);
                         GoToChase();
                         return;
                     }
@@ -408,8 +407,54 @@ public class EnemyMovement : MonoBehaviour
         }        
     }
 
+    public void GetAlerted(Vector3 alertPos)
+    {
+        if(stunned || state == EnemyState.Attack || state == EnemyState.CoolDown || state == EnemyState.WindUp || state == EnemyState.Idle)
+        {
+            return;
+        }
+        target = alertPos;
+        count = 0;
+        state = EnemyState.Wander;
+
+    }
+
+    private void SendOutAlert(Vector3 pos)
+    {
+        // alertedAllies.Clear();
+        // OnDrawGizmosSelected(alertRange);
+        Debug.Log("sending out alert");
+         Collider[] cols;
+        cols = Physics.OverlapSphere(transform.position, alertRange);
+        if (cols.Length > 0)
+        {
+            foreach (Collider c in cols)
+            {
+                if (c.gameObject.CompareTag("Enemy"))
+                {
+                    EnemyMovement e = c.GetComponent<EnemyMovement>();
+                    if(e != null)
+                    {
+                        //  alertedAllies.Add(e);
+                       // Debug.DrawLine(transform.position, e.transform.position, Color.black, 5f);
+                       if(e != this)
+                        e.GetAlerted(pos);
+                    }
+                }
+            }
+        }
+
+    }
+
     public float GetAttackRange()
     {
         return attackRange;
     }
+
+  /*  private void OnDrawGizmosSelected()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position, alertRange);
+    }*/
 }

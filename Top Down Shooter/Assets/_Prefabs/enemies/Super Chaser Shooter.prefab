@@ -537,11 +537,13 @@ MonoBehaviour:
   aggroRange: 15
   aggroLeashRange: 20
   attackRange: 6
+  alertRange: 7.5
   wanderSpeed: 5
   chaseSpeed: 6
   numAttacks: 1
   myBullet: {fileID: 11400000, guid: bb8ebb8a4e3fa3e4685d3bf0288cda7f, type: 2}
   _MoveAndShoot: 0
+  _TrackTargetWhileAiming: 0
   state: 0
 --- !u!114 &8715980503370420128
 MonoBehaviour:

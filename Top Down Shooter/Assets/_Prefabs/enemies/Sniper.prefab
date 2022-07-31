@@ -277,6 +277,7 @@ MonoBehaviour:
   aggroRange: 15
   aggroLeashRange: 17.5
   attackRange: 12
+  alertRange: 5
   wanderSpeed: 4
   chaseSpeed: 5
   numAttacks: 1
